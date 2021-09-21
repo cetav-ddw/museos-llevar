@@ -1,0 +1,44 @@
+// Typografic
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+@font-face {
+    font-family:'NationalBold';
+    src: local('NationalBold'),
+        url(/typographies/NationalBold.otf) format('NationalBold');
+}
+
+@font-face {
+    font-family:'NationalRegular';
+    src: local('NationalRegular'),
+        url(/typographies/NationalRegular.otf) format('NationalRegular');
+}
+
+$main-typo: 'Roboto', sans-serif;
+$title-bold: 'NationalBold', sans-serif;
+$title-regular: 'NationalRegular', sans-serif;
+
+// Colors
+
+$orange: #EC4627;
+$pink: #FE95B3;
+$white: #FFFF;
+$light-blue: #3974FE;
+$dark-blue: #0100A3;
+$black: #0000;
+
+$size: 1rem;
+
+// base-Typography
+
+$typo-xs: $size;
+$typo-s: $size * 1.5;
+
+// Mobile-Typography
+
+$typo-m: $size * 2;
+$typo-l: $size * 3.5;
+
+// Desktop-Typography
+
+$typo-xl: $size * 4;
+$typo-xxl: $size * 6;

@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@font-face {
+  font-family: 'NationalBold';
+  src: local("NationalBold"), url(/typographies/NationalBold.otf) format("NationalBold"); }
+
+@font-face {
+  font-family: 'NationalRegular';
+  src: local("NationalRegular"), url(/typographies/NationalRegular.otf) format("NationalRegular"); }
+
+html {
+  margin: 0;
+  font-size: 10px;
+  font-family: "Roboto", sans-serif; }
+
+body {
+  background: #FFFF;
+  margin: 0; }
+
+a {
+  text-decoration: none; }
+
+h1 {
+  font-family: "NationalBold", sans-serif; }
