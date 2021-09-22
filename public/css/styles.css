@@ -21,3 +21,17 @@ a {
 
 h1 {
   font-family: "NationalBold", sans-serif; }
+
+.footer {
+  background-color: #0100A3;
+  display: flex;
+  justify-content: space-around;
+  padding: 6rem 0; }
+  .footer p {
+    margin: 0;
+    color: #FFFF; }
+  .footer a {
+    background-color: #3974FE;
+    color: #FFFF;
+    border-radius: 100%;
+    padding: 0.1rem 0.5rem; }
