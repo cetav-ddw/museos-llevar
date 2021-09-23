@@ -25,13 +25,40 @@ h1 {
 .footer {
   background-color: #0100A3;
   display: flex;
-  justify-content: space-around;
-  padding: 6rem 0; }
+  flex-direction: column-reverse; }
+  .footer img {
+    padding-top: 1.5rem; }
   .footer p {
-    margin: 0;
-    color: #FFFF; }
-  .footer a {
-    background-color: #3974FE;
     color: #FFFF;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+    text-align: center; }
+  @media (min-width: 69rem) {
+    .footer {
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 2rem 0; }
+      .footer p {
+        text-align: left;
+        margin-top: 4rem; }
+      .footer img {
+        width: 30%; } }
+
+.footer__anchor {
+  margin-top: 3.5rem;
+  position: fixed;
+  right: 1rem;
+  text-align: right;
+  top: 11rem; }
+  .footer__anchor a {
+    background-color: #3974FE;
     border-radius: 100%;
-    padding: 0.1rem 0.5rem; }
+    color: #FFFF;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem; }
+  @media (min-width: 69rem) {
+    .footer__anchor {
+      top: 3rem;
+      right: 2rem; } }

@@ -1,18 +1,53 @@
 .footer {
     background-color: $dark-blue;
     display: flex;
-    justify-content: space-around;
-    padding: 6rem 0;
+    flex-direction: column-reverse;
+
+    img {
+        padding-top: 1.5rem;
+    }
 
     p{
         color: $white;
-        margin: 0;
+        font-family: $main-typo;
+        font-size: $typo-s;
+        margin-bottom: 3rem;       
+        margin-top: 2rem; 
+        text-align:  center;
     }
+
+    @media (min-width: 69rem) {
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 2rem 0;
+
+        p {
+            text-align: left;
+            margin-top: 4rem;
+        }
+        
+        img {
+            width: 30%;
+        }
+    }
+}
+.footer__anchor {
+    margin-top: 3.5rem;
+    position: fixed;
+    right: 1rem;
+    text-align: right;
+    top: 11rem;
 
     a{
         background-color: $light-blue;
         border-radius: 100%;
         color: $white;
-        padding: 0.1rem 0.5rem;
+        font-size: $typo-s;
+        padding: 0.5rem 1rem;
+    }
+
+    @media (min-width: 69rem) {
+        top: 3rem;
+        right: 2rem;
     }
 }
