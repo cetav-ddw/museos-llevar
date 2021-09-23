@@ -1,0 +1,80 @@
+.pedagogies--color-blue {
+    background-color: $dark-blue;
+    width: 22.4rem;
+    height: 7.4rem;
+
+    @media (min-width: 69rem) {
+        width: 65rem;
+        height: 20rem;
+    }
+}
+
+.pedagogies {
+    margin: 0 auto;
+
+    h1 {
+        font-family: $title-bold;
+        font-size: $typo-m;
+        margin-top: 7.5rem;
+        text-align: center;
+    }
+
+    p {
+        font-size: $typo-s;
+        margin-top: 3rem;
+        margin-bottom: 4rem;
+        margin: 0 auto;
+        text-align: justify;
+        width: 80%;
+    }
+}
+
+.pedagogies__cards {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8rem;
+    
+    @media (min-width: 69rem) {
+        justify-content: space-around;
+        flex-direction: row;
+    }
+}
+
+.pedagogies__cards__information {
+    margin: 0 auto;
+    margin-top: 2.5rem;
+    padding: 3rem 0  0 3rem;
+    width: 22rem;
+    
+    img {
+        width: 40%;
+    }
+
+    h2 {
+        font-family: $title-bold;
+        font-size: $typo-m;
+    }
+
+    p {
+        font-family: $main-typo;
+        font-size: $typo-s;
+        margin: 0;
+    }
+
+    a {
+        float: right;
+        margin: 2rem 1rem 3rem 0;
+    }
+}
+
+.pedagogies__cards--white {
+    h2 p {
+        color: $black;
+        background-color: $white;
+    }
+}
+
+.pedagogies__cards--blue {
+    color: $white;
+    background-color: $light-blue;
+}

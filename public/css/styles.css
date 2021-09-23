@@ -21,3 +21,62 @@ a {
 
 h1 {
   font-family: "NationalBold", sans-serif; }
+
+.pedagogies--color-blue {
+  background-color: #0100A3;
+  width: 22.4rem;
+  height: 7.4rem; }
+  @media (min-width: 69rem) {
+    .pedagogies--color-blue {
+      width: 65rem;
+      height: 20rem; } }
+
+.pedagogies {
+  margin: 0 auto; }
+  .pedagogies h1 {
+    font-family: "NationalBold", sans-serif;
+    font-size: 2rem;
+    margin-top: 7.5rem;
+    text-align: center; }
+  .pedagogies p {
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    margin: 0 auto;
+    text-align: justify;
+    width: 80%; }
+
+.pedagogies__cards {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8rem; }
+  @media (min-width: 69rem) {
+    .pedagogies__cards {
+      justify-content: space-around;
+      flex-direction: row; } }
+
+.pedagogies__cards__information {
+  margin: 0 auto;
+  margin-top: 2.5rem;
+  padding: 3rem 0  0 3rem;
+  width: 22rem; }
+  .pedagogies__cards__information img {
+    width: 40%; }
+  .pedagogies__cards__information h2 {
+    font-family: "NationalBold", sans-serif;
+    font-size: 2rem; }
+  .pedagogies__cards__information p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    margin: 0; }
+  .pedagogies__cards__information a {
+    float: right;
+    margin: 2rem 1rem 3rem 0; }
+
+.pedagogies__cards--white h2 p {
+  color: #0000;
+  background-color: #FFFF; }
+
+.pedagogies__cards--blue {
+  color: #FFFF;
+  background-color: #3974FE; }
