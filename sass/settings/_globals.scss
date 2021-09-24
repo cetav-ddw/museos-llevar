@@ -1,18 +1,41 @@
-html {
-  margin: 0;
-  font-size: 10px;
-  font-family: $main-typo;
-}
-
-body {
-  background: $white;
-  margin: 0;
-}
-
 a {
   text-decoration: none ;
 }
 
+body {
+  margin: 0;
+}
+
+html {
+  font-size: 10px;
+  font-family: $main-typo;
+  margin: 0;
+}
+
 h1 {
   font-family: $title-bold;
+  font-size: $typo-l;
+  @media (min-width: 60rem) {
+    font-size: $typo-xxl;
+  }
+}
+
+h2 {
+  font-family: $title-bold;
+  font-size: $typo-m;
+  @media (min-width: 60rem) {
+    font-size: $typo-xl;
+  }
+}
+
+p {
+  color: $black;
+  font-size: $typo-s;
+  line-height: 2.5rem
+}
+
+.wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
 }
