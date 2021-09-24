@@ -19,26 +19,26 @@ $title-regular: 'NationalRegular', sans-serif;
 
 // Colors
 
+$black: rgb(10, 9, 9);
+$dark-blue: #0100A3;
+$light-blue: #3974FE;
 $orange: #EC4627;
 $pink: #FE95B3;
 $white: #FFFF;
-$light-blue: #3974FE;
-$dark-blue: #0100A3;
-$black: #0000;
 
 $size: 1rem;
 
 // base-Typography
 
 $typo-xs: $size;
-$typo-s: $size * 1.5;
+$typo-s: $size * 1.6;
 
 // Mobile-Typography
 
-$typo-m: $size * 2;
-$typo-l: $size * 3.5;
+$typo-m: $size * 2.5;
+$typo-l: $size * 4;
 
 // Desktop-Typography
 
-$typo-xl: $size * 4;
+$typo-xl: $size * 4.5;
 $typo-xxl: $size * 6;
