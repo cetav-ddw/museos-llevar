@@ -2,41 +2,44 @@
     background-color: $dark-blue;
     display: flex;
     flex-direction: column-reverse;
-
-    img {
-        padding-top: 1.5rem;
-    }
+    margin-top: 5000px;
 
     p{
         color: $white;
-        font-family: $main-typo;
-        font-size: $typo-s;
         margin-bottom: 3rem;       
         margin-top: 2rem; 
         text-align:  center;
     }
 
-    @media (min-width: 69rem) {
+    @media (min-width: 40rem) {
+        img {
+            width: 60%;
+            margin: 0 auto;
+        }
+    }
+
+    @media (min-width: 60rem) {
         flex-direction: row;
         justify-content: space-around;
         padding: 2rem 0;
 
         p {
             text-align: left;
-            margin-top: 4rem;
+            margin-top: 6rem;
+            margin-left: 20rem;
         }
-        
+
         img {
-            width: 30%;
+            width: 20%;
         }
     }
 }
 .footer__anchor {
     margin-top: 3.5rem;
-    position: fixed;
-    right: 1rem;
     text-align: right;
-    top: 11rem;
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
 
     a{
         background-color: $light-blue;
@@ -44,10 +47,5 @@
         color: $white;
         font-size: $typo-s;
         padding: 0.5rem 1rem;
-    }
-
-    @media (min-width: 69rem) {
-        top: 3rem;
-        right: 2rem;
     }
 }

@@ -7,58 +7,76 @@
   font-family: 'NationalRegular';
   src: local("NationalRegular"), url(/typographies/NationalRegular.otf) format("NationalRegular"); }
 
-html {
-  margin: 0;
-  font-size: 10px;
-  font-family: "Roboto", sans-serif; }
-
-body {
-  background: #FFFF;
-  margin: 0; }
-
 a {
   text-decoration: none; }
 
+body {
+  margin: 0; }
+
+html {
+  font-size: 10px;
+  font-family: "Roboto", sans-serif;
+  margin: 0; }
+
 h1 {
-  font-family: "NationalBold", sans-serif; }
+  font-family: "NationalBold", sans-serif;
+  font-size: 4rem; }
+  @media (min-width: 60rem) {
+    h1 {
+      font-size: 6rem; } }
+
+h2 {
+  font-family: "NationalBold", sans-serif;
+  font-size: 2.5rem; }
+  @media (min-width: 60rem) {
+    h2 {
+      font-size: 4.5rem; } }
+
+p {
+  color: #0a0909;
+  font-size: 1.6rem;
+  line-height: 2.5rem; }
+
+.wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%; }
 
 .footer {
   background-color: #0100A3;
   display: flex;
-  flex-direction: column-reverse; }
-  .footer img {
-    padding-top: 1.5rem; }
+  flex-direction: column-reverse;
+  margin-top: 5000px; }
   .footer p {
     color: #FFFF;
-    font-family: "Roboto", sans-serif;
-    font-size: 1.5rem;
     margin-bottom: 3rem;
     margin-top: 2rem;
     text-align: center; }
-  @media (min-width: 69rem) {
+  @media (min-width: 40rem) {
+    .footer img {
+      width: 60%;
+      margin: 0 auto; } }
+  @media (min-width: 60rem) {
     .footer {
       flex-direction: row;
       justify-content: space-around;
       padding: 2rem 0; }
       .footer p {
         text-align: left;
-        margin-top: 4rem; }
+        margin-top: 6rem;
+        margin-left: 20rem; }
       .footer img {
-        width: 30%; } }
+        width: 20%; } }
 
 .footer__anchor {
   margin-top: 3.5rem;
-  position: fixed;
-  right: 1rem;
   text-align: right;
-  top: 11rem; }
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem; }
   .footer__anchor a {
     background-color: #3974FE;
     border-radius: 100%;
     color: #FFFF;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     padding: 0.5rem 1rem; }
-  @media (min-width: 69rem) {
-    .footer__anchor {
-      top: 3rem;
-      right: 2rem; } }
