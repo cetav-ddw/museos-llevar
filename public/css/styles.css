@@ -7,17 +7,79 @@
   font-family: 'NationalRegular';
   src: local("NationalRegular"), url(/typographies/NationalRegular.otf) format("NationalRegular"); }
 
-html {
-  margin: 0;
-  font-size: 10px;
-  font-family: "Roboto", sans-serif; }
-
-body {
-  background: #FFFF;
-  margin: 0; }
-
 a {
   text-decoration: none; }
 
+body {
+  margin: 0; }
+
+html {
+  font-size: 10px;
+  font-family: "Roboto", sans-serif;
+  margin: 0; }
+
 h1 {
-  font-family: "NationalBold", sans-serif; }
+  font-family: "NationalBold", sans-serif;
+  font-size: 4rem; }
+  @media (min-width: 60rem) {
+    h1 {
+      font-size: 6rem; } }
+
+h2 {
+  font-family: "NationalBold", sans-serif;
+  font-size: 2.5rem; }
+  @media (min-width: 60rem) {
+    h2 {
+      font-size: 4.5rem; } }
+
+p {
+  color: #0a0909;
+  font-size: 1.6rem;
+  line-height: 2.5rem; }
+
+.wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%; }
+
+.hazte-amigo__options {
+  display: flex;
+  flex-direction: column;
+  padding-top: 4rem; }
+  @media (min-width: 60rem) {
+    .hazte-amigo__options {
+      flex-direction: row;
+      justify-content: space-between; } }
+
+.hazte-amigo__options--img {
+  position: relative; }
+  .hazte-amigo__options--img div {
+    background-color: #EC4627;
+    width: 25rem;
+    padding-top: 100%; }
+    @media (min-width: 60rem) {
+      .hazte-amigo__options--img div {
+        margin-right: 10rem;
+        width: 50%; } }
+  .hazte-amigo__options--img img {
+    position: absolute;
+    right: 4rem;
+    top: 2rem;
+    width: 90%; }
+    @media (min-width: 60rem) {
+      .hazte-amigo__options--img img {
+        top: 4rem;
+        width: 80%; } }
+  @media (min-width: 60rem) {
+    .hazte-amigo__options--img {
+      width: 50%; } }
+
+.hazte-amigo__options--items {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 30%; }
+  @media (min-width: 60rem) {
+    .hazte-amigo__options--items {
+      padding-top: 0;
+      width: 50%; } }
