@@ -1,0 +1,94 @@
+.description{
+    color: $black;
+    font-family: $main-typo;
+    font-size: $typo-m;
+    margin: 0 auto;
+    width: 117rem;
+}
+.description__pink-background{
+    background-color: $pink;
+    position: absolute;
+    @media (max-width: 31.5rem){
+        width: 20rem;
+    }
+}
+
+.description__image{
+    img{
+        position: relative;
+        padding-left: 1rem;
+    }
+}
+
+.description__paragraphs{
+    text-align: justify;
+    position: relative;
+    width: 55rem;
+    @media (max-width: 31.5rem){
+        font-size: $typo-s;
+        text-align: left;
+        padding: 1rem;
+        }
+}
+
+.video-container{
+    background-color: $pink;
+    padding: 6rem;
+    width: 117rem;
+    @media (max-width: 31.5rem){
+    width: 31.5rem;
+}
+    p{
+        color: $black;
+        font-family: $title-bold;
+        font-size: $typo-l;
+        
+        
+        @media (max-width: 31.5rem){
+                font-size: $typo-l;
+                text-align: left;
+                margin: 0;
+                padding: 3rem 3rem 3.5rem 3rem;
+            }
+    }
+    a{
+        color: $purple;
+        font-family: $main-typo;
+        font-size: $typo-m;
+        font-weight: bold;
+        padding-left: 90rem;
+        text-decoration: none;
+    }
+    img{
+        width: 1.3rem;
+    }
+}
+
+.mobile__videos{
+    @media (max-width: 31.5rem){
+        padding-left: 23rem;
+        padding-bottom: 3rem;
+        width: 7rem;
+    }
+    a{
+
+        @media (max-width: 31.5rem){
+            font-size: $typo-s;
+        }
+    }
+    img{
+        @media (max-width: 31.5rem){
+            height: 1rem;
+            width: 1rem;
+        }
+    }
+}
+
+.blue-decoration{
+    background-color: $dark-blue;
+    @media (max-width: 31.5rem){
+        height: 5rem;
+        margin-top: 3rem;
+        width: 19rem;
+    }
+}

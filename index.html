@@ -15,17 +15,24 @@
         <!--contenedor de imagen-->
         <div class="description__image">
             <div class="description__pink-background"></div>
-            <img src="img/" alt="Imagen de descripción de Museos para Llevar">
+            <img
+                sizes="(max-width: 480px) 100vw, 480px"
+                srcset="
+                img/01_Branding.022_iffazb_c_scale,w_190.jpg 190w,
+                img/01_Branding.022_iffazb_c_scale,w_480.jpg 480w"
+                src="img/01_Branding.022_iffazb_c_scale,w_190.jpg"
+                alt="Imagen de descripción de Museos para Llevar">
+            
         </div>
         <!--contenedor de texto-->
         <div class="description__paragraphs">
             <p>
-                is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
                 when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also 
                 the leap into electronic typesetting.
             </p>
             <p>
-                is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
                 when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also 
                 the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing 
             </p>
@@ -35,8 +42,35 @@
     <div class="video-container">
         <p>Para acceder a los videos
         dar clic en el siguiente enlace</p>
-        <a href="#">VIDEOS</a>
-        <img src="img/" alt="Click aquí para acceder a los videos">
+        <div class="mobile__videos">
+            <a href="#">VIDEOS</a>
+            <img src="img/arrow.png" alt="Click aquí para acceder a los videos">
+        </div>
+        
+    </div>
+    <div class="blue-decoration"></div>
+
+    <!--Slider / Carrusel-->
+    <div class="slider">
+        <div class="slider__info">
+            <h2>Nombre</h2>
+            <p>Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+        </div>
+        <div class="slider__images">
+            <!--<img
+                sizes="(max-width: 480px) 100vw, 480px"
+                srcset="
+                img/01_Branding.022_iffazb_c_scale,w_190.jpg 190w,
+                img/01_Branding.022_iffazb_c_scale,w_480.jpg 480w"
+                src="img/01_Branding.022_iffazb_c_scale,w_190.jpg"
+                alt="">-->
+        </div>
+
+        <div class="slider__dots">
+            <span class="dots" onclick="currentSlide(1)"></span>
+            <span class="dots" onclick="currentSlide(2)"></span>
+            <span class="dots" onclick="currentSlide(3)"></span>
+        </div> 
     </div>
 </body>
 
