@@ -21,3 +21,139 @@ a {
 
 h1 {
   font-family: "NationalBold", sans-serif; }
+
+.description {
+  color: #222222;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  margin: 0 auto;
+  width: 117rem; }
+
+.description__pink-background {
+  background-color: #FE95B3;
+  position: absolute; }
+  @media (max-width: 31.5rem) {
+    .description__pink-background {
+      width: 20rem; } }
+
+.description__image img {
+  position: relative;
+  padding-left: 1rem; }
+
+.description__paragraphs {
+  text-align: justify;
+  position: relative;
+  width: 55rem; }
+  @media (max-width: 31.5rem) {
+    .description__paragraphs {
+      font-size: 1.5rem;
+      text-align: left;
+      padding: 1rem; } }
+
+.video-container {
+  background-color: #FE95B3;
+  padding: 6rem;
+  width: 117rem; }
+  @media (max-width: 31.5rem) {
+    .video-container {
+      width: 31.5rem; } }
+  .video-container p {
+    color: #222222;
+    font-family: "NationalBold", sans-serif;
+    font-size: 3.5rem; }
+    @media (max-width: 31.5rem) {
+      .video-container p {
+        font-size: 3.5rem;
+        text-align: left;
+        margin: 0;
+        padding: 3rem 3rem 3.5rem 3rem; } }
+  .video-container a {
+    color: #381DDB;
+    font-family: "Roboto", sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-left: 90rem;
+    text-decoration: none; }
+  .video-container img {
+    width: 1.3rem; }
+
+@media (max-width: 31.5rem) {
+  .mobile__videos {
+    padding-left: 23rem;
+    padding-bottom: 3rem;
+    width: 7rem; } }
+
+@media (max-width: 31.5rem) {
+  .mobile__videos a {
+    font-size: 1.5rem; } }
+
+@media (max-width: 31.5rem) {
+  .mobile__videos img {
+    height: 1rem;
+    width: 1rem; } }
+
+.blue-decoration {
+  background-color: #0100A3; }
+  @media (max-width: 31.5rem) {
+    .blue-decoration {
+      height: 5rem;
+      margin-top: 3rem;
+      width: 19rem; } }
+
+.slider {
+  width: 117rem; }
+
+.slider__info {
+  background-color: #0100A3;
+  color: #FFFF;
+  margin: 0;
+  padding: 3rem;
+  width: 65rem; }
+  @media (max-width: 31.5rem) {
+    .slider__info {
+      margin-top: 3rem;
+      margin-left: 6rem;
+      position: relative;
+      width: 20rem; } }
+  .slider__info h2 {
+    font-family: "NationalBold", sans-serif;
+    font-size: 3.5rem;
+    margin: 0; }
+    @media (max-width: 31.5rem) {
+      .slider__info h2 {
+        font-size: 2rem;
+        padding-top: 1rem;
+        padding-left: 1.5rem;
+        margin: 0; } }
+  .slider__info p {
+    font-family: "Roboto", sans-serif;
+    font-size: 2rem; }
+    @media (max-width: 31.5rem) {
+      .slider__info p {
+        font-size: 1.5rem;
+        text-align: center;
+        padding-bottom: 2rem;
+        padding: 1.5rem;
+        margin: 0; } }
+
+@media (max-width: 31.5rem) {
+  .slider__dots {
+    margin-left: 13rem;
+    position: absolute; } }
+
+.dots {
+  cursor: pointer;
+  height: 1.6rem;
+  width: 1.6rem;
+  margin: 0 0.3rem;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.5s ease; }
+  @media (max-width: 31.5rem) {
+    .dots {
+      height: 1rem;
+      width: 1rem; } }
+
+.dots:hover {
+  background-color: #3974FE; }
