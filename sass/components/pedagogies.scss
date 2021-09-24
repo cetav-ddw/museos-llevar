@@ -31,13 +31,10 @@
 
 .pedagogies__cards {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin-bottom: 8rem;
-    
-    @media (min-width: 69rem) {
-        justify-content: space-around;
-        flex-direction: row;
-    }
 }
 
 .pedagogies__cards__information {

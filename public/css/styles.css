@@ -48,12 +48,10 @@ h1 {
 
 .pedagogies__cards {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin-bottom: 8rem; }
-  @media (min-width: 69rem) {
-    .pedagogies__cards {
-      justify-content: space-around;
-      flex-direction: row; } }
 
 .pedagogies__cards__information {
   margin: 0 auto;
