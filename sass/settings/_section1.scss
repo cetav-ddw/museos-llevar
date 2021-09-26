@@ -8,6 +8,10 @@
             display: block;
             margin: auto;
     }
+
+}
+.navlist{
+    display: none;
 }
 .video{
     background-color: $dark-blue;
@@ -16,6 +20,53 @@
         width: 80%;
         display: block;
         margin: auto;
+    }
+    @media(min-width: 43.125rem){
+       iframe{
+        height:250px;
+       }
+    }
+}
+
+@media(min-width: 73.125rem){
+  .video, .title{
+   width: 50%;
+   float: left;
+   height:400px;
+  } 
+  .clear{
+    clear: both;
+  }
+  .sidebar{
+      display: none;
+  }
+  iframe{
+      position: relative;
+      top: 40px;
+      left: -80px;
+  }
+  .navlist{
+      display: block;
+  }
+}
+
+.navlist{
+    position: absolute;
+    top: 10px;
+    left: 700px;
+    margin:10px 0 0 0;
+}
+.navlist li{
+    display: inline-block;
+    padding:0 0 0 1.5rem;
+    a{
+        font-size:$typo-s;
+        font-weight:bold;
+        color:$white;
+        font-family: $title-bold;
+    }
+    a:hover{
+        color:$orange;
     }
 }
 .info{
@@ -31,6 +82,29 @@
     h2, p{
       text-align: left;
       padding: 0 1.563rem 0 1.563rem;
+    }
+    @media(min-width: 43.125rem){
+           h2,p{
+            margin:35px 0 2.5rem 50px;
+           }
+        }
+
+}
+@media(min-width: 73.125rem){
+    .info img{
+     width: 20%;
+     float: left;
+     padding:1rem 1rem 1rem 12rem;
+    }
+    .info-course_text{
+        position: relative;
+        top: 40px;
+        left: 700px;
+        width: 40%;
+        bottom: 50px;
+    }
+    .info-taller_text{
+        width: 40%;
     }
 }
 .form{
@@ -62,6 +136,17 @@
         text-align: left;
         padding: 1.5rem 1.563rem 0 1.563rem;
     }
+    @media(min-width: 43.125rem){
+        h2,p{
+         margin:35px 0 2.5rem 50px;
+        }
+        input{
+            width: 80%;
+        }
+        button{
+            padding:0.825rem 0.825rem 0.825rem 0.825rem;
+        }
+     }
 }
 
 .sidebar {
@@ -107,3 +192,4 @@
         font-weight:500;
       }
 }
+//Media Query
