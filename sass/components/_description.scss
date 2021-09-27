@@ -2,18 +2,22 @@
     align-items: center;
     display:flex;
     flex-direction: column;
+    justify-content: space-between;
+    gap: 10%;
     @media (min-width: 60rem){
         flex-direction: row;
-        }
+        margin-bottom: 10%;
+        width: 70%;
+    }
 }
 
 .description__pink-background{
     background-color: $pink;
     width: 25rem;
     padding-top: 95%;
+
     @media (min-width: 60rem){
-        padding-top: 50%;
-        width: 50%;
+        padding-top: 80%;
     }
 }
 .description__image{
@@ -24,65 +28,35 @@
         top: 2rem;
         width: 90%;
     }
+
     @media (min-width: 60rem){
-        width: 50%;
-        img{
-            width:50%;
-        }
+        width: 80%;
     }
 }
 .description__paragraphs{
-    padding-top: 20%;
+    padding-top: 6rem;
     text-align: justify;
-    @media (min-width: 60rem){
-        padding-top: 0;
-        width: 50%;
-    }
+
 }
 
 .video-container{
     background-color: $pink;
     display: flex;
-    justify-content: flex-end;
-    padding: 1rem;
     width: 100%;
 }
 
 .video-container--elements{
-    width: 80%;
+    padding: 4rem;
     h2{
-        margin-right: 3rem;
-        @media (min-width: 60rem){
-            font-size: $typo-l;
-        }
+        margin-bottom: 4rem;
     }
     a{
-        color: $purple;
-        font-size: $typo-s;
+        color: $dark-blue;
         font-weight: bold;
-        padding-left: 15rem;
-        @media (min-width: 60rem){
-            font-size: $typo-m;
-            padding-left: 50rem;
-        }
+        margin-left: 80%;
     }
-    img{
-        width: 1.3rem;
-    }
-    @media (min-width: 60rem){
-        padding: 2rem;
-        width: 50%;
+
+    @media (min-width: 40rem){
+        margin-left: 50%;
     }
 }
-
-
-.blue-decoration{
-    background-color: $dark-blue;
-    padding: 3rem;
-    margin-top: 3rem;
-    width: 15rem;
-    @media (min-width: 60rem){
-        margin-top: 7rem;
-        padding: 7.5rem;
-        width: 50rem;
-    }}
