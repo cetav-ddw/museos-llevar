@@ -50,14 +50,13 @@ p {
   .footer img {
     margin: 0 auto;
     width: 80%; }
+    @media (min-width: 40rem) {
+      .footer img img {
+        width: 50%; } }
   .footer p {
     color: #FFFF;
     margin-top: 2rem;
     text-align: center; }
-  @media (min-width: 40rem) {
-    .footer img {
-      width: 50%;
-      margin: 0 auto; } }
   @media (min-width: 60rem) {
     .footer {
       flex-direction: row;
@@ -66,7 +65,7 @@ p {
       .footer p {
         text-align: left;
         margin-top: 6rem;
-        margin-left: 20rem; }
+        margin-left: 5%; }
       .footer img {
         width: 30%; } }
 
