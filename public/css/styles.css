@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 @font-face {
   font-family: 'NationalBold';
@@ -42,73 +43,67 @@ p {
   margin-right: auto;
   width: 85%; }
 
-.pedagogies--color-blue {
-  background-color: #0100A3;
-  height: 7.4rem;
-  margin-top: 9rem;
-  width: 25rem; }
-  @media (min-width: 40rem) {
-    .pedagogies--color-blue {
-      height: 15rem;
-      width: 40rem; } }
-  @media (min-width: 60rem) {
-    .pedagogies--color-blue {
-      height: 20rem;
-      width: 70rem; } }
-
-.pedagogies h1 {
-  margin-top: 7.5rem;
-  text-align: center; }
-
-.pedagogies p {
-  margin-bottom: 4rem;
-  margin-top: 3rem;
+.pedagogies {
   margin: 0 auto;
-  text-align: justify;
-  width: 80%; }
+  text-align: center; }
+  .pedagogies h1 {
+    margin-top: 7.5rem; }
+  .pedagogies p {
+    margin-bottom: 4rem;
+    margin-top: 3rem; }
 
-.pedagogies__cards {
+.pedagogies_cards {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 8rem; }
+  gap: 2rem; }
 
-.pedagogies__cards__information {
-  border-radius: 0 1.5rem 0 1.5rem;
+.pedagogies_cards_information {
+  align-items: center;
+  border-radius: 0 15px 0 15px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
-  gap: 10rem;
+  flex-direction: column;
+  height: 100%;
   margin: 0 auto;
-  margin-top: 2.5rem;
-  padding: 3rem 0  0 3rem;
   position: relative;
   width: 70%; }
-  .pedagogies__cards__information p {
-    margin: 0;
-    margin-bottom: 10rem; }
+  .pedagogies_cards_information img {
+    width: 80%;
+    padding-top: 2rem; }
+  .pedagogies_cards_information h2 {
+    padding-bottom: 4rem; }
   @media (min-width: 40rem) {
-    .pedagogies__cards__information {
+    .pedagogies_cards_information {
       width: 40%; } }
   @media (min-width: 60rem) {
-    .pedagogies__cards__information {
+    .pedagogies_cards_information {
       width: 20%; } }
-
-.cards__arrow {
-  position: absolute;
-  bottom: 3rem;
-  right: 3rem; }
-
-.pedagogies__cards--white {
-  background-color: #FFFF; }
-  .pedagogies__cards--white h2 {
-    color: #0100A3; }
-  .pedagogies__cards--white p {
-    color: #0100A3; }
 
 .pedagogies__cards--blue {
   background-color: #3974FE; }
-  .pedagogies__cards--blue h2 {
+  .pedagogies__cards--blue p, .pedagogies__cards--blue input, .pedagogies__cards--blue h2 {
     color: #FFFF; }
-  .pedagogies__cards--blue p {
-    color: #FFFF; }
+
+.pedagogies__cards--white {
+  background-color: #FFFF; }
+  .pedagogies__cards--white p, .pedagogies__cards--white input, .pedagogies__cards--white h2 {
+    color: #0100A3; }
+
+.pedagogies_cards--arrow {
+  -webkit-appearance: none;
+  bottom: 2rem;
+  font-size: 2.5rem;
+  position: absolute;
+  right: 2rem; }
+
+.pedagogies_cards--arrow:before {
+  content: "↓"; }
+
+.pedagogies_cards--arrow:checked:before {
+  content: "↑"; }
+
+.js-content {
+  display: none; }
