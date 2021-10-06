@@ -82,15 +82,25 @@ p {
     .pedagogies_cards_information {
       width: 20%; } }
 
-.pedagogies__cards--blue {
-  background-color: #3974FE; }
-  .pedagogies__cards--blue p, .pedagogies__cards--blue input, .pedagogies__cards--blue h2 {
-    color: #FFFF; }
-
 .pedagogies__cards--white {
   background-color: #FFFF; }
   .pedagogies__cards--white p, .pedagogies__cards--white input, .pedagogies__cards--white h2 {
     color: #0100A3; }
+
+.pedagogies__cards--orange {
+  background-color: #EC4627; }
+  .pedagogies__cards--orange p, .pedagogies__cards--orange input, .pedagogies__cards--orange h2 {
+    color: #FFFF; }
+
+.pedagogies__cards--pink {
+  background-color: #FE95B3; }
+  .pedagogies__cards--pink p, .pedagogies__cards--pink input, .pedagogies__cards--pink h2 {
+    color: #0100A3; }
+
+.pedagogies__cards--blue {
+  background-color: #0100A3; }
+  .pedagogies__cards--blue p, .pedagogies__cards--blue input, .pedagogies__cards--blue h2 {
+    color: #FFFF; }
 
 .pedagogies_cards--arrow {
   -webkit-appearance: none;

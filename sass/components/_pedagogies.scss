@@ -49,19 +49,37 @@
         width: 20%;
     }
 }
-.pedagogies__cards--blue {
-    background-color: $light-blue;
-
-    p, input, h2{
-        color: $white;
-    }
-}
-
 .pedagogies__cards--white {
     background-color: $white;
 
+    p, input, h2{
+        color: $dark-blue;
+    }
+}
+
+.pedagogies__cards--orange {
+    background-color: $orange;
+
+    p, input, h2 {
+        color: $white;
+    }
+    
+}
+
+.pedagogies__cards--pink {
+    background-color: $pink;
+
     p, input, h2 {
         color: $dark-blue;
+    }
+    
+}
+
+.pedagogies__cards--blue {
+    background-color: $dark-blue;
+
+    p, input, h2 {
+        color: $white;
     }
     
 }
