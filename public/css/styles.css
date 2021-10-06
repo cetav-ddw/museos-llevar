@@ -53,58 +53,13 @@ p {
     .wrapper {
       width: 75%; } }
 
-.hazte-amigo__options {
-  display: flex;
-  flex-direction: column;
-  padding-top: 4rem; }
-  @media (min-width: 60rem) {
-    .hazte-amigo__options {
-      flex-direction: row;
-      justify-content: space-between; } }
-
-.hazte-amigo__options--img {
-  position: relative; }
-  .hazte-amigo__options--img div {
-    border-radius: 4rem;
-    background-color: #EC4627;
-    width: 25rem;
-    padding-top: 100%; }
-    @media (min-width: 60rem) {
-      .hazte-amigo__options--img div {
-        margin-right: 10rem;
-        width: 50%; } }
-  .hazte-amigo__options--img img {
-    border-radius: 4rem;
-    position: absolute;
-    right: 4rem;
-    top: 2rem;
-    width: 90%; }
-    @media (min-width: 60rem) {
-      .hazte-amigo__options--img img {
-        top: 4rem;
-        width: 80%; } }
-  @media (min-width: 60rem) {
-    .hazte-amigo__options--img {
-      width: 50%; } }
-
-.hazte-amigo__options--items {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding-top: 30%; }
-  @media (min-width: 60rem) {
-    .hazte-amigo__options--items {
-      padding-top: 0;
-      width: 50%; } }
-
 .form {
   display: flex;
   justify-content: space-between;
-  background-color: #EC4627;
-  color: #FFFF;
+  background-color: #0100A3;
   text-align: center;
   margin-top: 10%; }
-  .form p {
+  .form h1, .form label, .form p {
     color: #FFFF; }
 
 .form__content {
@@ -113,30 +68,33 @@ p {
     .form__content {
       padding-top: 5.5rem; } }
 
-.form__content--input {
-  margin-left: auto;
-  margin-right: auto; }
-  .form__content--input input, .form__content--input textarea {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
-    border-radius: .8rem;
-    border: 0;
-    outline: 0;
-    margin-top: 1.5rem;
-    padding: 1rem;
-    resize: none;
-    width: 70%; }
-    .form__content--input input:focus, .form__content--input textarea:focus {
-      box-shadow: 0 0px 2px #b60202; }
-  .form__content--input textarea {
-    height: 12rem; }
+.form__content--input input, .form__content--input textarea {
+  box-shadow: 0px 4px 4px rgba(48, 45, 45, 0.25);
+  filter: drop-shadow(0px 4px 4px rgba(46, 45, 45, 0.3));
+  border-radius: .8rem;
+  border: 0;
+  outline: 0;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  resize: none;
+  width: 70%; }
+  .form__content--input input:focus, .form__content--input textarea:focus {
+    box-shadow: 0 0px 2px #f7f7f7; }
+
+.form__content--label {
+  font-size: 1.6rem;
+  margin-right: .8rem; }
+
+.form__content--text {
+  height: 12rem; }
   @media (min-width: 60rem) {
-    .form__content--input {
-      width: 70%; } }
+    .form__content--text {
+      width: 60%; } }
 
 .form__content--submit {
-  background: #0100A3;
-  color: #FFFF;
+  background: #FE95B3;
+  font-weight: 900;
+  color: #0100A3;
   cursor: pointer;
   text-transform: uppercase;
   margin-top: 1.5rem;
@@ -147,8 +105,10 @@ p {
     .form__content--submit {
       width: 15%; } }
 
-.form-decoration {
+.form__decoration {
+  width: 40%;
+  background-image: url(./../../img/MPLL-Patron.svg);
   display: none; }
   @media (min-width: 60rem) {
-    .form-decoration {
+    .form__decoration {
       display: inline; } }
