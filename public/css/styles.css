@@ -42,6 +42,7 @@ p {
   margin-right: auto;
   width: 85%; }
 
+
 .footer {
   background-color: #0100A3;
   display: flex;
@@ -80,3 +81,4 @@ p {
     .footer__anchor {
       bottom: 3rem;
       right: 0.5rem; } }
+
