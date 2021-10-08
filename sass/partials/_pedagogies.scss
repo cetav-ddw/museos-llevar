@@ -1,58 +1,105 @@
-@charset "UTF-8";
-.section {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 8rem;
-  gap: 2rem; }
+.pedagogies {
+    margin: 0 auto;
+    text-align: center;
 
-.card {
-  border-radius: 0 15px 0 15px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  display: flex;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
-  flex-direction: column;
-  height: 28rem;
-  justify-content: center;
-  position: relative;
-  width: 18rem; }
+    h1 {
+        margin-top: 7.5rem;
+    }
+
+    p {
+        margin-bottom: 4rem;
+        margin-top: 3rem;
+    }
+}
+
+.pedagogies_cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.pedagogies_cards_information {
+    align-items: center;
+    border-radius: 0 15px 0 15px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
+    flex-direction: column;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    width: 70%;
+
+    img {
+        width: 80%;
+        padding-top: 2rem;
+    }
+
+    h2 {
+        padding-bottom: 4rem;
+    }
+
+    @media (min-width: 40rem) {
+        width: 40%;
+    }
+
+    @media (min-width: 60rem) {
+        width: 20%;
+    }
+}
+.pedagogies__cards--white {
+    background-color: $white;
+
+    p, input, h2{
+        color: $dark-blue;
+    }
+}
+
+.pedagogies__cards--orange {
+    background-color: $orange;
+
+    p, input, h2 {
+        color: $white;
+    }
+    
+}
+
+.pedagogies__cards--pink {
+    background-color: $pink;
+
+    p, input, h2 {
+        color: $dark-blue;
+    }
+    
+}
 
 .pedagogies__cards--blue {
-  background-color: #3974FE;
-  color: #ffffff; }
+    background-color: $dark-blue;
 
-.pedagogies__cards--white {
-  background-color: white;
-  color: #0100A3; }
+    p, input, h2 {
+        color: $white;
+    }
+    
+}
 
-.arrow {
-  -webkit-appearance: none;
-  bottom: 20px;
-  color: white;
-  font-size: 25px;
-  position: absolute;
-  right: 20px; }
+.pedagogies_cards--arrow {
+    -webkit-appearance: none;
+    bottom: 2rem;
+    font-size: $typo-m;
+    position: absolute;
+    right: 2rem;
+}
 
-.arrow:before {
-  content: "↓"; }
+.pedagogies_cards--arrow:before {
+    content: "↓";
+}
 
-.arrow:checked + .content {
-  display: block; }
+.pedagogies_cards--arrow:checked:before {
+    content: "↑";
+}
+.js-content {
+    display: none;
 
-.arrow:checked:before {
-  content: "↑"; }
-
-.content {
-  display: none;
-  width: 15rem;
-  height: 250px; }
-
-#title {
-  font-size: 30px;
-  font-weight: bold;
-  text-align: left;
-  margin-left: 1rem; }
-
-#text {
-  margin-left: 1rem; }
+}
