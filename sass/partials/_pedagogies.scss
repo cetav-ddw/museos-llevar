@@ -1,0 +1,58 @@
+@charset "UTF-8";
+.section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 8rem;
+  gap: 2rem; }
+
+.card {
+  border-radius: 0 15px 0 15px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
+  flex-direction: column;
+  height: 28rem;
+  justify-content: center;
+  position: relative;
+  width: 18rem; }
+
+.pedagogies__cards--blue {
+  background-color: #3974FE;
+  color: #ffffff; }
+
+.pedagogies__cards--white {
+  background-color: white;
+  color: #0100A3; }
+
+.arrow {
+  -webkit-appearance: none;
+  bottom: 20px;
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  right: 20px; }
+
+.arrow:before {
+  content: "↓"; }
+
+.arrow:checked + .content {
+  display: block; }
+
+.arrow:checked:before {
+  content: "↑"; }
+
+.content {
+  display: none;
+  width: 15rem;
+  height: 250px; }
+
+#title {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: left;
+  margin-left: 1rem; }
+
+#text {
+  margin-left: 1rem; }
