@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 @font-face {
   font-family: 'NationalBold';
@@ -29,7 +30,7 @@ h1 {
 h2 {
   font-family: "NationalBold", sans-serif;
   font-size: 2.5rem; }
-  @media (min-width: 60rem) {
+  @media (min-width: 80rem) {
     h2 {
       font-size: 4rem; } }
 
@@ -43,82 +44,195 @@ p {
   margin-right: auto;
   width: 85%; }
 
-.info-taller {
-  padding: 0 0 8rem 0; }
-  .info-taller p {
-    margin: 0 0 2.5rem 0; }
-  .info-taller img {
-    padding: 1rem 0 1rem 0;
-    width: 60%;
-    display: block;
-    margin: auto; }
-  .info-taller h2, .info-taller p {
-    text-align: left;
-    padding: 0 1.563rem 0 1.563rem; }
+.between-sections {
+  background-color: #FE95B3;
+  border-radius: 0 2rem 2rem 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: 10rem;
+  margin-top: 10%;
+  width: 60%; }
+  @media (min-width: 60rem) {
+    .between-sections {
+      height: 25rem;
+      margin-top: 10%;
+      width: 40%; } }
+
+.footer {
+  background-color: #3974FE;
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 2rem 0; }
+  .footer img {
+    margin: 0 auto;
+    width: 80%; }
+    @media (min-width: 40rem) {
+      .footer img img {
+        width: 50%; } }
+  .footer p {
+    color: #FFFF;
+    margin-top: 2rem;
+    text-align: center; }
+  @media (min-width: 60rem) {
+    .footer {
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 2rem 0; }
+      .footer p {
+        text-align: left;
+        margin-top: 6rem;
+        margin-left: 5%; }
+      .footer img {
+        width: 30%; } }
+
+.footer__anchor {
+  margin-top: 3.5rem;
+  position: fixed;
+  bottom: 12rem;
+  right: -5rem; }
+  .footer__anchor img {
+    width: 40%; }
   @media (min-width: 40rem) {
-    .info-taller h2, .info-taller p {
-      margin: 35px 0 2.5rem 50px; }
-    .info-taller img {
+    .footer__anchor {
+      bottom: 3rem;
+      right: 0.5rem; } }
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  background-color: #0100A3;
+  text-align: center;
+  margin-top: 10%; }
+  .form h1, .form label, .form p {
+    color: #FFFF; }
+
+.form__content {
+  padding: 4rem 2rem 6rem 2rem; }
+  @media (min-width: 60rem) {
+    .form__content {
+      padding-top: 5.5rem; } }
+
+.form__content--input input, .form__content--input textarea {
+  box-shadow: 0px 4px 4px rgba(48, 45, 45, 0.25);
+  filter: drop-shadow(0px 4px 4px rgba(46, 45, 45, 0.3));
+  border-radius: .8rem;
+  border: 0;
+  outline: 0;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  resize: none;
+  width: 70%; }
+  .form__content--input input:focus, .form__content--input textarea:focus {
+    box-shadow: 0 0px 2px #f7f7f7; }
+
+.form__content--label {
+  font-size: 1.6rem;
+  margin-right: .8rem; }
+
+.form__content--text {
+  height: 12rem; }
+  @media (min-width: 60rem) {
+    .form__content--text {
       width: 60%; } }
 
-@media (min-width: 60rem) {
-  .info-taller_img {
-    margin-left: 5rem; }
-  .info-taller img {
-    width: 30%;
-    float: left;
-    padding: 1rem 1rem 1rem 1rem; }
-  .info-course_text {
-    float: right;
-    width: 40%; }
-  .info-taller_text {
-    width: 40%; } }
+.form__content--submit {
+  background: #FE95B3;
+  font-weight: 900;
+  color: #0100A3;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  width: 35%;
+  border-radius: .8rem; }
+  @media (min-width: 50rem) {
+    .form__content--submit {
+      width: 15%; } }
 
-.newsletter {
-  background-color: #FE95B3;
-  padding: 0 0 2rem 0; }
-  .newsletter input {
-    border: 0;
-    display: block;
-    margin: auto;
-    height: 3rem;
-    width: 85%;
-    border-radius: 1rem;
-    text-indent: 2rem; }
-  .newsletter button {
-    display: block;
-    margin: 1.563rem  auto 0 auto;
-    background-color: #0100A3;
-    color: white;
-    padding: 0.625rem 0.625rem 0.625rem 0.625rem;
-    border-radius: 0.8rem;
-    border: 0;
-    cursor: pointer; }
-  .newsletter p {
-    color: white;
-    margin: 0 0 2.5rem 0;
-    text-align: left;
-    padding: 1.5rem 1.563rem 0 1.563rem; }
-  @media (min-width: 40rem) {
-    .newsletter h2, .newsletter p {
-      margin: 5rem 0 2.5rem 50px; }
-    .newsletter input {
-      width: 80%; }
-    .newsletter button {
-      padding: 0.825rem 0.825rem 0.825rem 0.825rem; } }
+.form__decoration {
+  width: 40%;
+  background-image: url(./../../img/MPLL-Patron.svg);
+  display: none; }
   @media (min-width: 60rem) {
-    .newsletter h2, .newsletter p {
-      position: relative;
-      top: 5.5rem;
-      margin: 0 0 2.5rem 8rem; }
-    .newsletter input {
-      width: 40%;
-      position: relative;
-      left: 30rem; }
-    .newsletter button {
-      padding: 0.825rem 0.825rem 0.825rem 0.825rem;
-      position: relative;
-      left: 30rem; } }
+    .form__decoration {
+      display: inline; } }
 
-.clear {
-  clear: both; }
+.pedagogies {
+  margin: 0 auto;
+  text-align: center; }
+  .pedagogies h1 {
+    margin-top: 7.5rem; }
+  .pedagogies p {
+    margin-bottom: 4rem;
+    margin-top: 3rem; }
+
+.pedagogies_cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem; }
+
+.pedagogies_cards_information {
+  align-items: center;
+  border-radius: 0 15px 0 15px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
+  flex-direction: column;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  width: 70%; }
+  .pedagogies_cards_information img {
+    width: 80%;
+    padding-top: 2rem; }
+  .pedagogies_cards_information h2 {
+    padding-bottom: 4rem; }
+  @media (min-width: 40rem) {
+    .pedagogies_cards_information {
+      width: 40%; } }
+  @media (min-width: 60rem) {
+    .pedagogies_cards_information {
+      width: 20%; } }
+
+.pedagogies__cards--white {
+  background-color: #FFFF; }
+  .pedagogies__cards--white p, .pedagogies__cards--white input, .pedagogies__cards--white h2 {
+    color: #0100A3; }
+
+.pedagogies__cards--orange {
+  background-color: #EC4627; }
+  .pedagogies__cards--orange p, .pedagogies__cards--orange input, .pedagogies__cards--orange h2 {
+    color: #FFFF; }
+
+.pedagogies__cards--pink {
+  background-color: #FE95B3; }
+  .pedagogies__cards--pink p, .pedagogies__cards--pink input, .pedagogies__cards--pink h2 {
+    color: #0100A3; }
+
+.pedagogies__cards--blue {
+  background-color: #0100A3; }
+  .pedagogies__cards--blue p, .pedagogies__cards--blue input, .pedagogies__cards--blue h2 {
+    color: #FFFF; }
+
+.pedagogies_cards--arrow {
+  -webkit-appearance: none;
+  bottom: 2rem;
+  font-size: 2.5rem;
+  position: absolute;
+  right: 2rem; }
+
+.pedagogies_cards--arrow:before {
+  content: "↓";
+  cursor: pointer; }
+
+.pedagogies_cards--arrow:checked:before {
+  content: "↑";
+  cursor: pointer; }
+
+.pedagogies_cards--arrow:hover {
+  transform: scale(2);
+  transition: 0.5s; }
+
+.js-content {
+  display: none; }
