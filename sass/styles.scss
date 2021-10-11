@@ -1,9 +1,10 @@
 @import 'settings/variables';
 @import 'settings/globals';
-@import 'components/courses';
-@import 'components/newsletter';
+@import 'components/form';
+@import 'components/footer.scss';
 @import 'components/header';
 @import 'components/sidebar';
-@import 'components/footer.scss';
-@import 'components/form';
+@import 'partials/courses';
+@import 'partials/newsletter';
 @import 'partials/pedagogies';
+@import 'partials/description';
