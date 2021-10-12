@@ -10,8 +10,13 @@
     p {
         margin-bottom: 4rem;
         margin-top: 3rem;
-        width: 65%;
-        margin: 0 auto;
+    }
+
+    @media (min-width: 80rem) {
+        p {
+            width: 65%;
+            margin: 0 auto;
+        }
     }
 }
 
