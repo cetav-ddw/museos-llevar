@@ -1,0 +1,27 @@
+.donations {
+    margin-top: 10%;
+}
+
+.donations__wrapper {
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 4rem;
+    @media (min-width: 60rem) {
+        flex-direction: row;
+    }
+}
+
+.donations__options {
+    color: $white;
+    background-color: $pink;
+    padding: 5rem;
+    border-radius: 1rem;
+}
+
+.donations__button {
+    background-color: $light-blue;
+    padding: 2rem;
+    border-radius: 3rem;
+}

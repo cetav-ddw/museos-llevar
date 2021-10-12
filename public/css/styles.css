@@ -484,3 +484,27 @@ p {
   @media (min-width: 40rem) {
     .video-container--elements {
       margin-left: 50%; } }
+
+.donations {
+  margin-top: 10%; }
+
+.donations__wrapper {
+  background-color: #FFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 4rem; }
+  @media (min-width: 60rem) {
+    .donations__wrapper {
+      flex-direction: row; } }
+
+.donations__options {
+  color: #FFFF;
+  background-color: #FE95B3;
+  padding: 5rem;
+  border-radius: 1rem; }
+
+.donations__button {
+  background-color: #3974FE;
+  padding: 2rem;
+  border-radius: 3rem; }
