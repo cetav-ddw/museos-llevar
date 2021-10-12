@@ -23,7 +23,7 @@ height: 90%;
 width: 90%;
 @media(min-width: 60rem){
     right: 10%;
-    top: 20rem;
+    top: 10rem;
     height: 90%;
     width: 90%;
 }
@@ -49,12 +49,12 @@ float: left;
 } 
 
 .video_principal{
-padding-bottom: 50%;
+padding-bottom: 45%;
 }
 .title_principal{
 padding-bottom: 40%;
 img{
-  padding: 20rem 0 3rem 0;
+  padding: 15rem 0 3rem 0;
 }
 }
 .sidebar{
@@ -64,42 +64,46 @@ display: none;
 .navlist{
 display: block;
 }
-.navlist {
-background-color: $pink;
-border-radius: 0.5rem;
-height: 5rem;
+.navlist_container{
+position: sticky;
+top: 0;
 z-index: 99;
-top: 5rem;
-position: fixed;
-display: flex;  
-align-items: center;
-width: 60%;
-  li{ 
-    margin-left: 2%;
-    list-style: none;
-  }
-  a{
-      text-transform: uppercase;
-      font-size:1.450rem;
-      position: relative;
-      color:$white;
-      font-family: $main-typo;
-  }
-  a:after{
-    content: "";
-    position: absolute;
-    background-color: $orange;
-    height: 0.2rem;
-    width: 0;
-    left: 0;
-    bottom: -7px;
-    transition: 0.5s;
-  }
-  a:hover:after{
-      width: 100%;
-  }
-  a:visited{
-    width: 100%;
-  }
-  }
 }
+.navlist {
+  float: right;
+  background-color: $pink;
+  border-radius: 0.150rem;
+  width: 50%;
+  display: flex;  
+  align-items: center;
+  height: 5rem;
+
+    li{ 
+      margin-left: 2%;
+      list-style: none;
+    }
+    a{
+        text-transform: uppercase;
+        font-size:1.450rem;
+        position: relative;
+        color:$white;
+        font-family: $main-typo;
+    }
+    a:after{
+      content: "";
+      position: absolute;
+      background-color: $orange;
+      height: 0.2rem;
+      width: 0;
+      left: 0;
+      bottom: -7px;
+      transition: 0.5s;
+    }
+    a:hover:after{
+        width: 100%;
+    }
+    a:visited{
+      width: 100%;
+    }
+  }
+} 
