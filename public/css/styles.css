@@ -498,13 +498,42 @@ p {
     .donations__wrapper {
       flex-direction: row; } }
 
+.donations__content {
+  width: 60%; }
+
 .donations__options {
-  color: #FFFF;
   background-color: #FE95B3;
   padding: 5rem;
-  border-radius: 1rem; }
+  border-radius: 1rem;
+  width: 40%; }
+  .donations__options h2, .donations__options p {
+    color: #FFFF; }
 
 .donations__button {
   background-color: #3974FE;
   padding: 2rem;
   border-radius: 3rem; }
+
+.donations__options-items {
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 4rem;
+  gap: 2rem;
+  justify-content: space-around; }
+  .donations__options-items img {
+    width: 30%; }
+  .donations__options-items p {
+    width: 50%; }
+  .donations__options-items span {
+    font-family: "NationalBold", sans-serif;
+    font-size: 4rem;
+    color: #EC4627;
+    padding-right: 1rem; }
+
+.donations__options-items:hover {
+  background-color: #3974FE;
+  transition: background ease-in .5s; }
+  .donations__options-items:hover span {
+    color: #FE95B3; }
