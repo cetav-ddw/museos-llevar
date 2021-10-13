@@ -1,0 +1,77 @@
+.donations {
+    margin-top: 10%;
+}
+
+.donations__wrapper {
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 4rem;
+    @media (min-width: 60rem) {
+        flex-direction: row;
+    }
+}
+
+.donations__content {
+    width: 90%;
+    @media (min-width: 50rem) {
+        width: 60%;
+    }
+}
+
+
+.donations__options {
+    background-color: $pink;
+    padding: 5rem;
+    border-radius: 1rem;
+    width: 90%;
+    @media (min-width: 50rem) {
+        width: 40%;
+    }
+    
+    h2, p {
+        color: $white;
+    }
+}
+
+.donations__button {
+    background-color: $light-blue;
+    padding: 2rem;
+    border-radius: 3rem;
+}
+
+.donations__options-items {
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 4rem;
+    gap: 2rem;
+    justify-content: space-around;
+
+    img {
+        width: 30%;
+    }
+
+    p{
+        width: 50%;
+    }
+    
+    span {
+        font-family: $title-bold;
+        font-size: $typo-l;
+        color: $orange;
+        padding-right: 1rem;
+    }
+
+}
+
+.donations__options-items:hover {
+    background-color: $light-blue;
+    transition: background ease-in .5s;
+
+    span {
+        color: $pink;
+    }
+}
