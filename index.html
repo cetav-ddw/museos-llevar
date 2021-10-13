@@ -176,14 +176,17 @@
 
     <aside class="between-sections"></aside>
 
-    <section class="form">
+    <section id="contact" class="form">
         <aside class="form__decoration">
         </aside>
         <div class="form__content wrapper">
-            <h1>Hablemos sobre Museos para llevar</h1>
+            <h1>Hablemos sobre <br> Museos para llevar</h1>
             <p>Lorem Ipsum is simply dummy text of the printing .</p>
 
-            <form action="https://formspree.io/f/xdoyjyyn" method="POST" autocomplete="off">
+            <form id="form" name="formspree" action="https://formspree.io/f/xdoyjyyn" method="POST" autocomplete="off">
+                <div id="alert" class="alert alert-warning alert-dismissable">
+
+                </div>
                 <div class="form__content--input ">
                     <div>
                         <label class="form__content--label" for="name">Nombre</label>
@@ -219,6 +222,7 @@
         id="mcjs">!function (c, h, i, m, p) { m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p) }(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/0460fca35d2fa74e5eaedfacc/6c41c1f6ad57372ee67de7760.js");</script>
     <script src="js/cards.js"></script>
     <script src="js/sidebar.js"></script>
+    <script src="js/form.js"></script>
 </body>
 
 </html>
