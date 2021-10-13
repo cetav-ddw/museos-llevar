@@ -7,10 +7,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="public/css/styles.css">
     <link rel="shortcut icon" href="img/icon-foots.png" />
+    <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
     <title>Museos para llevar</title>
 </head>
 
 <body>
+
+    <section class="navlist_container">
+        <nav class="navlist">
+            <li>
+                <a href="#about">Museos para llevar</a>
+            </li>
+            <li>
+                <a href="#pedagogies">Pedagogia</a>
+            </li>
+            <li>
+                <a href="#course">Talleres</a>
+            </li>
+            <li>
+                <a href="#donations">Hazte Amigo</a>
+            </li>
+            <li>
+                <a href="#contact">Contacto</a>
+            </li>
+        </nav>
+    </section>
 
     <div class="wrapper">
         <div id="sidebar" class="sidebar">
@@ -18,47 +39,31 @@
                 <button class="toggle-btn"><img src="./img/menu.png" alt=""></button>
             </div>
             <div class="sidebar__links">
-                <a href="#">Museos para llevar</a>
-                <a href="#">Pedagogia</a>
-                <a href="#">Talleres</a>
-                <a href="#">Hazte Amigo</a>
+                <a href="#about">Museos para llevar</a>
+                <a href="#pedagogies">Pedagogia</a>
+                <a href="#course">Talleres</a>
+                <a href="#donations">Hazte Amigo</a>
+                <a href="#contact">Contacto</a>
             </div>
         </div>
     </div>
 
 
     <section>
-
         <div class="title_principal">
             <div class="title__box">
                 <img src="./img/museos para llevar.png" alt="">
             </div>
         </div>
+
         <div class="video_principal">
-            <nav class="navlist">
-                <li>
-                    <a href="#">Museos para llevar</a>
-                </li>
-                <li>
-                    <a href="#">Pedagogia</a>
-                </li>
-                <li>
-                    <a href="#">Talleres</a>
-                </li>
-                <li>
-                    <a href="#">Hazte Amigo</a>
-                </li>
-            </nav>
-            <div class="video__box">
-                <iframe src="https://www.youtube.com/embed/LXb3EKWsInQ" title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-                </iframe>
+            <div>
+                <video class="video__box" src="./video/181015_12a_Venice Beach_016.mp4" controls="controls"></video>
             </div>
         </div>
     </section>
 
-    <section>
+    <section id="about">
         <div class="description wrapper">
             <div class="description__image">
                 <img src="img/img.png">
@@ -93,13 +98,17 @@
 
     <aside class="between-sections"></aside>
 
-    <section class="pedagogies wrapper">
+    <section id="pedagogies" class="pedagogies wrapper">
         <h1>Estrategia Metodológica</h1>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
-            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+            and
+            scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+            leap into
+            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+            release of
+            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
+            like
             Aldus PageMaker including versions of Lorem Ipsum.</p>
 
         <div class="pedagogies_cards">
@@ -132,13 +141,14 @@
                 <input class="pedagogies_cards--arrow js-arrow" type="checkbox">
                 </div->
             </div>
+        </div>
     </section>
 
     <aside class="between-sections sections-right"></aside>
 
-    <section class="info-taller wrapper">
+    <section id="course" class="info-taller wrapper">
         <div class="info-taller_text">
-            <h2>Talleres</h2>
+            <h1>Talleres</h1>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                 industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
                 scrambled it to make a type specimen book. It has survived not only five centuries,</p>
@@ -155,7 +165,7 @@
             </div>
         </div>
         <div class="info-course_text">
-            <h2>Cursos</h2>
+            <h1>Cursos</h1>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                 industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
                 scrambled it to make a type specimen book. It has survived not only five centuries, </p>
@@ -165,13 +175,31 @@
     <div class="clear">
     </div>
 
-    <section class="newsletter wrapper">
-        <div class="newsletter_box">
-            <p>Recibe toda la informacion sobre nuestros eventos</p>
-            <input type="email" placeholder="Email">
-            <button>Continue</button>
+    <div class="newsletter wrapper">
+        <div class="newsletter__title">
+            <h3>Suscribete a nuestro newsletter y conoce más sobre nuestros talleres</h3>
         </div>
-    </section>
+
+
+        <div id="mc_embed_signup" class="newsletter__mailchimp">
+            <form
+                action="https://contextodigital.us5.list-manage.com/subscribe/post?u=0460fca35d2fa74e5eaedfacc&amp;id=2d41a0dc94"
+                method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                target="_blank" novalidate>
+                <div id="mc_embed_signup_scroll">
+
+                    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address"
+                        required>
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                            name="b_0460fca35d2fa74e5eaedfacc_2d41a0dc94" tabindex="-1" value=""></div>
+                    <div class="clear button-mailchimp"><input type="submit" value="Suscribirme" name="subscribe"
+                            id="mc-embedded-subscribe" class="button"></div>
+                </div>
+            </form>
+        </div>
+
+        <!--End mc_embed_signup-->
+    </div>
 
     <aside class="between-sections"></aside>
 
@@ -212,10 +240,13 @@
         <aside class="form__decoration">
         </aside>
         <div class="form__content wrapper">
-            <h1>Hablemos sobre Museos para llevar</h1>
+            <h1>Hablemos sobre <br> Museos para llevar</h1>
             <p>Lorem Ipsum is simply dummy text of the printing .</p>
 
-            <form action="https://formspree.io/f/xdoyjyyn" method="POST" autocomplete="off">
+            <form id="form" name="formspree" action="https://formspree.io/f/xdoyjyyn" method="POST" autocomplete="off">
+                <div id="alert" class="alert alert-warning alert-dismissable">
+
+                </div>
                 <div class="form__content--input ">
                     <div>
                         <label class="form__content--label" for="name">Nombre</label>
@@ -239,7 +270,7 @@
         </div>
     </section>
 
-    <footer class="footer">
+    <footer id="contact" class="footer">
         <p>© 2021 Copyright. Todos los derechos reservados</p>
         <img src="img/MPLL-Icon-Logo.svg"
             alt="logo de patrocinadores, museos para llevar, consejo internacional de museos y acción arte">
@@ -247,9 +278,11 @@
             <a href="#"><img src="img/arrow-icon.png" alt="Flecha que direcciona hacia el encabezado"></a>
         </div>
     </footer>
-
+    <script
+        id="mcjs">!function (c, h, i, m, p) { m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p) }(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/0460fca35d2fa74e5eaedfacc/6c41c1f6ad57372ee67de7760.js");</script>
     <script src="js/cards.js"></script>
     <script src="js/sidebar.js"></script>
+    <script src="js/form.js"></script>
 </body>
 
 </html>

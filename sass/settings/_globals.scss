@@ -4,6 +4,7 @@ a {
 
 body {
   margin: 0;
+  color: $black;
 }
 
 html {
@@ -31,10 +32,9 @@ h2 {
 }
 
 p {
-  color: $black;
   font-size: $typo-s;
-  line-height: 2.5rem;
-  @media (min-width: 60rem) {
+  line-height: 1.5;
+  @media (min-width: 80rem) {
     font-size: $typo-m;
   }
 }
@@ -61,4 +61,8 @@ p {
 
 .sections-right {
   background-color: $orange;
+}
+
+.clear{
+  clear: both;
 }
