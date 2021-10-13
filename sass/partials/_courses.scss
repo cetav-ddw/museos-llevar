@@ -1,42 +1,39 @@
 .info-taller{
     margin-top: 10%;
-    padding: 0 0 8rem 0;
-    p{
-        margin:0 0 2.5rem 0;
-    }
+
      img{
-        padding:  1rem 0 1rem 0;
-        width: 60%;
         display: block;
         margin: auto;
+        padding:  1rem 0 1rem 0;
+        width: 60%;
+        @media (min-width: 60rem) {
+            float: left;
+            padding:1rem 1rem 1rem 1rem;
+            width: 30%;
+        }
     }
+
     h2, p{
       text-align: left;
-      padding: 0 1.563rem 0 1.563rem;
     }
-    @media(min-width: 40rem){
-           h2,p{
-            margin:35px 0 2.5rem 50px;
-           }
-           img{
-               width: 60%;
-           }
-        }
 }
-@media(min-width: 60rem){
-    .info-taller_img{
+
+.info-taller_img{
+    @media(min-width: 60rem){
         margin-left: 5rem;
     }
-    .info-taller img{
-     width: 30%;
-     float: left;
-     padding:1rem 1rem 1rem 1rem;
+}
+
+.info-course_text{
+    @media(min-width: 60rem){
+        float: right;
+        width: 50%;
     }
-    .info-course_text{
-       float: right;
-       width: 40%;
-    }
-    .info-taller_text{
-        width: 40%;
+}
+
+.info-taller_text{
+    @media(min-width: 60rem){ 
+        padding-bottom: 5rem;
+        width: 50%;
     }
 }

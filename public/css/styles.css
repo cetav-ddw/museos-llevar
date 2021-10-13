@@ -302,36 +302,33 @@ p {
     font-size: 2.2rem; }
 
 .info-taller {
-  margin-top: 10%;
-  padding: 0 0 8rem 0; }
-  .info-taller p {
-    margin: 0 0 2.5rem 0; }
+  margin-top: 10%; }
   .info-taller img {
-    padding: 1rem 0 1rem 0;
-    width: 60%;
     display: block;
-    margin: auto; }
+    margin: auto;
+    padding: 1rem 0 1rem 0;
+    width: 60%; }
+    @media (min-width: 60rem) {
+      .info-taller img {
+        float: left;
+        padding: 1rem 1rem 1rem 1rem;
+        width: 30%; } }
   .info-taller h2, .info-taller p {
-    text-align: left;
-    padding: 0 1.563rem 0 1.563rem; }
-  @media (min-width: 40rem) {
-    .info-taller h2, .info-taller p {
-      margin: 35px 0 2.5rem 50px; }
-    .info-taller img {
-      width: 60%; } }
+    text-align: left; }
 
 @media (min-width: 60rem) {
   .info-taller_img {
-    margin-left: 5rem; }
-  .info-taller img {
-    width: 30%;
-    float: left;
-    padding: 1rem 1rem 1rem 1rem; }
+    margin-left: 5rem; } }
+
+@media (min-width: 60rem) {
   .info-course_text {
     float: right;
-    width: 40%; }
+    width: 50%; } }
+
+@media (min-width: 60rem) {
   .info-taller_text {
-    width: 40%; } }
+    padding-bottom: 5rem;
+    width: 50%; } }
 
 .pedagogies {
   margin: 0 auto;
