@@ -12,53 +12,57 @@
 
 <body>
 
+    <section class="navlist_container">
+        <nav class="navlist">
+            <li>
+                <a href="#about">Museos para llevar</a>
+            </li>
+            <li>
+                <a href="#pedagogies">Pedagogia</a>
+            </li>
+            <li>
+                <a href="#course">Talleres</a>
+            </li>
+            <li>
+                <a href="#donations">Hazte Amigo</a>
+            </li>
+            <li>
+                <a href="#contact">Contacto</a>
+            </li>
+        </nav>
+    </section>
+
     <div class="wrapper">
         <div id="sidebar" class="sidebar">
             <div class="siderbar__menu">
                 <button class="toggle-btn"><img src="./img/menu.png" alt=""></button>
             </div>
             <div class="sidebar__links">
-                <a href="#">Museos para llevar</a>
-                <a href="#">Pedagogia</a>
-                <a href="#">Talleres</a>
-                <a href="#">Hazte Amigo</a>
+                <a href="#about">Museos para llevar</a>
+                <a href="#pedagogies">Pedagogia</a>
+                <a href="#course">Talleres</a>
+                <a href="#donations">Hazte Amigo</a>
+                <a href="#contact">Contacto</a>
             </div>
         </div>
     </div>
 
 
     <section>
-
         <div class="title_principal">
             <div class="title__box">
                 <img src="./img/museos para llevar.png" alt="">
             </div>
         </div>
+
         <div class="video_principal">
-            <nav class="navlist">
-                <li>
-                    <a href="#">Museos para llevar</a>
-                </li>
-                <li>
-                    <a href="#">Pedagogia</a>
-                </li>
-                <li>
-                    <a href="#">Talleres</a>
-                </li>
-                <li>
-                    <a href="#">Hazte Amigo</a>
-                </li>
-            </nav>
-            <div class="video__box">
-                <iframe src="https://www.youtube.com/embed/LXb3EKWsInQ" title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-                </iframe>
+            <div>
+                <video class="video__box" src="./video/181015_12a_Venice Beach_016.mp4" controls="controls"></video>
             </div>
         </div>
     </section>
 
-    <section>
+    <section id="about">
         <div class="description wrapper">
             <div class="description__image">
                 <img src="img/img.png">
@@ -93,7 +97,7 @@
 
     <aside class="between-sections"></aside>
 
-    <section class="pedagogies wrapper">
+    <section id="pedagogies" class="pedagogies wrapper">
         <h1>Estrategia Metodológica</h1>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
             industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
@@ -141,9 +145,9 @@
 
     <aside class="between-sections sections-right"></aside>
 
-    <section class="info-taller wrapper">
+    <section id="course" class="info-taller wrapper">
         <div class="info-taller_text">
-            <h2>Talleres</h2>
+            <h1>Talleres</h1>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                 industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
                 scrambled it to make a type specimen book. It has survived not only five centuries,</p>
@@ -160,12 +164,15 @@
             </div>
         </div>
         <div class="info-course_text">
-            <h2>Cursos</h2>
+            <h1>Cursos</h1>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                 industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
                 scrambled it to make a type specimen book. It has survived not only five centuries, </p>
         </div>
     </section>
+
+    <div class="clear">
+    </div>
 
     <aside class="between-sections"></aside>
 
@@ -200,7 +207,7 @@
         </div>
     </section>
 
-    <footer class="footer">
+    <footer id="contact" class="footer">
         <p>© 2021 Copyright. Todos los derechos reservados</p>
         <img src="img/MPLL-Icon-Logo.svg"
             alt="logo de patrocinadores, museos para llevar, consejo internacional de museos y acción arte">
