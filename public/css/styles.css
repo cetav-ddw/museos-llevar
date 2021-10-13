@@ -499,13 +499,19 @@ p {
       flex-direction: row; } }
 
 .donations__content {
-  width: 60%; }
+  width: 90%; }
+  @media (min-width: 50rem) {
+    .donations__content {
+      width: 60%; } }
 
 .donations__options {
   background-color: #FE95B3;
   padding: 5rem;
   border-radius: 1rem;
-  width: 40%; }
+  width: 90%; }
+  @media (min-width: 50rem) {
+    .donations__options {
+      width: 40%; } }
   .donations__options h2, .donations__options p {
     color: #FFFF; }
 

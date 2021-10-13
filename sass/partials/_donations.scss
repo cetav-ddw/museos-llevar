@@ -14,14 +14,21 @@
 }
 
 .donations__content {
-    width: 60%;
+    width: 90%;
+    @media (min-width: 50rem) {
+        width: 60%;
+    }
 }
+
 
 .donations__options {
     background-color: $pink;
     padding: 5rem;
     border-radius: 1rem;
-    width: 40%;
+    width: 90%;
+    @media (min-width: 50rem) {
+        width: 40%;
+    }
     
     h2, p {
         color: $white;
