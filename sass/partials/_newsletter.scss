@@ -1,0 +1,38 @@
+.button-mailchimp {
+    margin-top: 1.5rem;
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    background-color: $light-blue;
+    padding: 4rem;
+    gap: 2rem;
+    margin-top: 5%;
+    @media (min-width: 60rem) {
+        justify-content: space-around;
+        flex-direction: row;
+        width: 80%;
+        border-radius: 1rem;
+    }
+}
+
+.newsletter__mailchimp {
+    width: 70%;
+
+    @media (min-width: 60rem) {
+       width: 40%;
+    }
+}
+
+.newsletter__title {
+    h3 {
+        color: $white;
+        font-family:$main-typo;
+        font-size: $typo-m;
+    }
+
+    @media (min-width: 60rem) {
+        width: 40%;
+     }
+}
