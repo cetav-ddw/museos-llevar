@@ -6,9 +6,10 @@
     background-color: $white;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    align-items: center;
     gap: 4rem;
     @media (min-width: 60rem) {
+        justify-content: space-around;
         flex-direction: row;
     }
 }
@@ -23,7 +24,7 @@
 
 .donations__options {
     background-color: $pink;
-    padding: 5rem;
+    padding: 1rem;
     border-radius: 1rem;
     width: 90%;
     @media (min-width: 50rem) {
@@ -47,7 +48,6 @@
     flex-direction: row;
     align-items: center;
     margin-bottom: 4rem;
-    gap: 2rem;
     justify-content: space-around;
 
     img {
