@@ -141,6 +141,50 @@ p {
     color: #FFFF;
     margin-top: 2rem;
     text-align: center; }
+  .footer .go-top-container {
+    position: fixed;
+    bottom: 8rem;
+    right: -2rem;
+    width: 6rem;
+    height: 6rem;
+    z-index: -1; }
+  .footer .go-top-button {
+    width: 0rem;
+    height: 0rem;
+    background-color: #EC4627;
+    border-radius: 50%;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1; }
+  .footer .go-top-button i {
+    position: absolute;
+    font-size: 3rem;
+    top: 3%;
+    left: 34%;
+    color: #FFFF;
+    transition: .2s; }
+  .footer .show {
+    z-index: 10; }
+  .footer .show .go-top-button {
+    animation: popup .3s ease-in-out;
+    width: 4.5rem;
+    height: 4.5rem;
+    z-index: 11; }
+  .footer .show i {
+    transform: translate(-50% -50%) scale(1); }
+
+@keyframes popup {
+  0% {
+    width: 0rem;
+    height: 0rem; }
+  50% {
+    width: 6rem;
+    height: 6rem; }
+  100% {
+    width: 4rem;
+    height: 4rem; } }
   @media (min-width: 60rem) {
     .footer {
       flex-direction: row;
@@ -151,19 +195,16 @@ p {
         margin-top: 6rem;
         margin-left: 5%; }
       .footer img {
-        width: 30%; } }
-
-.footer__anchor {
-  margin-top: 3.5rem;
-  position: fixed;
-  bottom: 12rem;
-  right: -5rem; }
-  .footer__anchor img {
-    width: 40%; }
-  @media (min-width: 40rem) {
-    .footer__anchor {
-      bottom: 3rem;
-      right: 0.5rem; } }
+        width: 30%; }
+      .footer .go-top-container {
+        bottom: 1rem;
+        right: 1rem; }
+      .footer .show .go-top-button {
+        width: 6rem;
+        height: 6rem; }
+      .footer .go-top-button i {
+        top: 15%;
+        left: 38%; } }
 
 .form {
   display: flex;
@@ -532,7 +573,6 @@ p {
     .video-container--elements {
       margin-left: 50%; } }
 
-<<<<<<< HEAD
 .donations {
   margin-top: 10%; }
 
@@ -582,7 +622,7 @@ p {
     width: 50%; }
   .donations__options-items span {
     font-family: "NationalBold", sans-serif;
-    font-size: 4rem;
+    font-size: 3.5rem;
     color: #EC4627;
     padding-right: 1rem; }
 
@@ -591,7 +631,7 @@ p {
   transition: background ease-in .5s; }
   .donations__options-items:hover span {
     color: #FE95B3; }
-=======
+
 .button-mailchimp {
   margin-top: 1.5rem; }
 
@@ -623,4 +663,3 @@ p {
 @media (min-width: 60rem) {
   .newsletter__title {
     width: 40%; } }
->>>>>>> a2342e925ec453c61fcf409b1e0a0de9cb33984d
