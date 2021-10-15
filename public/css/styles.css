@@ -649,32 +649,37 @@ p {
 
 .button-mailchimp {
   margin-top: 1.5rem; }
+  @media (min-width: 60rem) {
+    .button-mailchimp {
+      display: inline-block;
+      margin-top: 0; } }
 
 .newsletter {
   display: flex;
   flex-direction: column;
   background-color: #3974FE;
+  align-items: center;
   padding: 4rem;
   gap: 2rem;
   margin-top: 5%; }
-  @media (min-width: 60rem) {
+  @media (min-width: 40rem) {
     .newsletter {
       justify-content: space-around;
       flex-direction: row;
-      width: 80%;
+      width: 75%;
       border-radius: 1rem; } }
 
 .newsletter__mailchimp {
   width: 70%; }
-  @media (min-width: 60rem) {
+  @media (min-width: 40rem) {
     .newsletter__mailchimp {
-      width: 40%; } }
+      width: 60%; } }
 
 .newsletter__title h3 {
   color: #FFFF;
   font-family: "Roboto", sans-serif;
   font-size: 2.2rem; }
 
-@media (min-width: 60rem) {
+@media (min-width: 40rem) {
   .newsletter__title {
     width: 40%; } }
