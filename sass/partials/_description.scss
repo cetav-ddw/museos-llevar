@@ -2,47 +2,46 @@
     align-items: center;
     display:flex;
     flex-direction: column;
-    justify-content: space-between;
     gap: 10%;
-    @media (min-width: 60rem){
+    justify-content: space-between;
+    padding-top: 10%;
+
+    @media (min-width: 40rem){
         flex-direction: row;
-        margin-bottom: 10%;
+        padding-top: 0;
         width: 70%;
     }
 }
 
 .description__pink-background{
     background-color: $pink;
-    width: 25rem;
-    padding-top: 95%;
-
-    @media (min-width: 60rem){
-        padding-top: 80%;
-    }
+    width: 20rem;
+    padding-top: 100%;
 }
+
 .description__image{
     position: relative;
     img{
         position: absolute;
         right: -1rem;
         top: 2rem;
-        width: 90%;
-    }
-
-    @media (min-width: 60rem){
-        width: 80%;
+        width: 100%;
     }
 }
 .description__paragraphs{
     padding-top: 6rem;
     text-align: justify;
 
+    @media (min-width: 40rem){
+        width: 70%;
+    }
 }
 
 .video-container{
     background-color: $pink;
     display: flex;
     width: 100%;
+    margin-top: 5%;
 }
 
 .video-container--elements{
