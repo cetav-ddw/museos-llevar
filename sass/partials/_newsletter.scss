@@ -11,10 +11,12 @@
     flex-direction: column;
     background-color: $light-blue;
     align-items: center;
-    padding: 4rem;
+    padding: 2rem;
     gap: 2rem;
-    margin-top: 5%;
+    margin-top: 5rem;
     @media (min-width: 40rem) {
+        margin: 0 auto;
+        margin-top: 5rem;
         justify-content: space-around;
         flex-direction: row;
         width: 75%;
@@ -35,6 +37,7 @@
         color: $white;
         font-family:$main-typo;
         font-size: $typo-m;
+        margin-left: 5%;
     }
 
     @media (min-width: 40rem) {
