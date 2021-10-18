@@ -9,7 +9,11 @@
   src: local("NationalRegular"), url(/typographies/NationalRegular.otf) format("NationalRegular"); }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  font-size: 1.4rem; }
+  @media (min-width: 80rem) {
+    a {
+      font-size: 1.8rem; } }
 
 body {
   margin: 0;
@@ -31,17 +35,17 @@ h1 {
 
 h2 {
   font-family: "NationalBold", sans-serif;
-  font-size: 2.2rem; }
+  font-size: 2rem; }
   @media (min-width: 80rem) {
     h2 {
       font-size: 3.5rem; } }
 
 p {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   line-height: 1.5; }
   @media (min-width: 80rem) {
     p {
-      font-size: 2.2rem; } }
+      font-size: 2rem; } }
 
 .wrapper {
   margin-left: auto;
@@ -114,7 +118,7 @@ p {
     box-shadow: 0 0px 2px #f7f7f7; }
 
 .form__content--label {
-  font-size: 1.4rem; }
+  font-size: 1.5rem; }
 
 .form__content--text {
   height: 12rem; }
@@ -272,7 +276,7 @@ p {
     box-shadow: 0 0px 2px #f7f7f7; }
 
 .form__content--label {
-  font-size: 1.4rem; }
+  font-size: 1.5rem; }
 
 .form__content--text {
   height: 12rem; }
@@ -377,10 +381,9 @@ p {
     height: 5rem;
     width: 50%; }
     .navlist li {
-      margin-left: 5%;
+      margin-left: 3.5%;
       list-style: none; }
     .navlist a {
-      font-size: 1.4rem;
       position: relative;
       color: #FFFF;
       font-family: "Roboto", sans-serif; }
@@ -437,7 +440,7 @@ p {
     display: flex;
     padding: 2rem;
     color: white;
-    font-size: 2.2rem; }
+    font-size: 2rem; }
 
 .info-taller {
   margin-top: 10%; }
@@ -539,7 +542,7 @@ p {
 .pedagogies_cards--arrow {
   -webkit-appearance: none;
   bottom: 2rem;
-  font-size: 2.2rem;
+  font-size: 2rem;
   position: absolute;
   right: 2rem; }
 
@@ -673,15 +676,15 @@ p {
     padding-right: 1rem; }
 
 .donations__options-items:hover {
-  -webkit-animation: tiembla 0.1s; }
+  -webkit-animation: tiembla 0.9s; }
 
 @-webkit-keyframes tiembla {
   0% {
-    -webkit-transform: rotateZ(-5deg); }
+    -webkit-transform: rotateZ(-1deg); }
   50% {
-    -webkit-transform: rotateZ(0deg) scale(0.8); }
+    -webkit-transform: rotateZ(0deg) scale(0.9); }
   100% {
-    -webkit-transform: rotateZ(5deg); } }
+    -webkit-transform: rotateZ(1deg); } }
 
 .button-mailchimp {
   margin-top: 1.5rem; }
@@ -716,7 +719,7 @@ p {
 .newsletter__title h3 {
   color: #FFFF;
   font-family: "Roboto", sans-serif;
-  font-size: 2.2rem;
+  font-size: 2rem;
   margin-left: 5%; }
 
 @media (min-width: 40rem) {
