@@ -8,14 +8,16 @@
     }
 
     p {
-        margin-bottom: 4rem;
-        margin-top: 3rem;
+        margin-bottom: 6rem;
+        margin-top: -3rem;
     }
 
     @media (min-width: 80rem) {
         p {
             width: 65%;
             margin: 0 auto;
+            margin-bottom: 7rem;
+            margin-top: -4rem;
         }
     }
 }
@@ -65,7 +67,7 @@
 .pedagogies__cards--white {
     background-color: $white;
 
-    p, input, h2{
+    p, h2{
         color: $dark-blue;
     }
 }
@@ -73,16 +75,20 @@
 .pedagogies__cards--orange {
     background-color: $orange;
 
-    p, input, h2 {
+    p, h2 {
         color: $white;
     }
-    
+
+    @media (min-width: 60rem) {
+        padding-bottom: 4rem;
+    }
+
 }
 
 .pedagogies__cards--pink {
     background-color: $pink;
 
-    p, input, h2 {
+    p, h2 {
         color: $dark-blue;
     }
     
@@ -91,37 +97,11 @@
 .pedagogies__cards--blue {
     background-color: $dark-blue;
 
-    p, input, h2 {
+    p, h2 {
         color: $white;
     }
-    
-}
 
-.pedagogies_cards--arrow {
-    -webkit-appearance: none;
-    bottom: 2rem;
-    font-size: $typo-m;
-    position: absolute;
-    right: 2rem;
-}
-
-.pedagogies_cards--arrow:before {
-    content: "↓";
-    cursor: pointer;
-
-}
-
-.pedagogies_cards--arrow:checked:before {
-    content: "↑";
-    cursor: pointer;
-}
-
-.pedagogies_cards--arrow:hover {
-    transform: scale(2);
-    transition: 0.5s;
-}
-
-.js-content {
-    display: none;
-
+    @media (min-width: 60rem) {
+        padding-bottom: 4rem;
+    }
 }
