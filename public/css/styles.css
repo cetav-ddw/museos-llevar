@@ -34,22 +34,26 @@ h1 {
 
 h2 {
   font-family: "NationalBold", sans-serif;
-  font-size: 2rem; }
+  font-size: 1.8rem; }
   @media (min-width: 80rem) {
     h2 {
       font-size: 3.5rem; } }
 
 p {
   font-size: 1.5rem;
-  line-height: 1.5; }
+  line-height: 1.7;
+  text-align: justify; }
   @media (min-width: 80rem) {
     p {
-      font-size: 2rem; } }
+      font-size: 1.8rem; } }
 
 .wrapper {
   margin-left: auto;
   margin-right: auto;
   width: 85%; }
+  @media (min-width: 120rem) {
+    .wrapper {
+      width: 130rem; } }
 
 .between-sections {
   background-color: #FE95B3;
@@ -69,6 +73,9 @@ p {
 
 .clear {
   clear: both; }
+
+.bold-font {
+  font-weight: bold; }
 
 .center {
   margin: 0 auto;
@@ -439,52 +446,31 @@ p {
     display: flex;
     padding: 2rem;
     color: white;
-    font-size: 2rem; }
+    font-size: 1.8rem; }
 
 .info-taller {
-  margin-top: 10%; }
-  .info-taller img {
-    display: block;
-    margin: auto;
-    padding: 1rem 0 1rem 0;
-    width: 60%; }
-    @media (min-width: 60rem) {
-      .info-taller img {
-        float: left;
-        padding: 1rem 1rem 1rem 1rem;
-        width: 30%; } }
-  .info-taller h2, .info-taller p {
-    text-align: left; }
-
-@media (min-width: 60rem) {
-  .info-taller_img {
-    margin-left: 5rem; } }
-
-@media (min-width: 60rem) {
-  .info-course_text {
-    float: right;
-    width: 50%; } }
-
-@media (min-width: 60rem) {
-  .info-taller_text {
-    padding-bottom: 5rem;
-    width: 50%; } }
-
-.pedagogies {
-  margin: 0 auto;
   margin-top: 10%;
   text-align: center; }
+
+.info-taller__items {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem; }
+  @media (min-width: 60rem) {
+    .info-taller__items {
+      flex-direction: row; }
+      .info-taller__items img {
+        width: 50%; } }
+
+.pedagogies {
+  margin-top: 10%; }
   .pedagogies h1 {
+    text-align: center;
     margin-top: 7.5rem; }
-  .pedagogies p {
-    margin-bottom: 6rem;
-    margin-top: -3rem; }
   @media (min-width: 80rem) {
     .pedagogies p {
-      width: 65%;
-      margin: 0 auto;
-      margin-bottom: 7rem;
-      margin-top: -4rem; } }
+      width: 80%; } }
+
 
 .pedagogies_cards {
   display: flex;
@@ -540,55 +526,92 @@ p {
     color: #FFFF; }
 
 .description {
-  align-items: center;
   display: flex;
-  flex-direction: column;
-  gap: 10%;
-  justify-content: space-between;
-  padding-top: 10%; }
-  @media (min-width: 40rem) {
-    .description {
-      flex-direction: row;
-      padding-top: 0;
-      width: 70%; } }
-
-.description__pink-background {
-  background-color: #FE95B3;
-  width: 20rem;
-  padding-top: 100%; }
+  justify-content: end;
+  position: relative; }
 
 .description__image {
-  position: relative; }
-  .description__image img {
-    position: absolute;
-    right: -1rem;
-    top: 2rem;
-    width: 100%; }
+  display: none; }
+  @media (min-width: 60rem) {
+    .description__image {
+      display: inline-block;
+      width: 30%;
+      left: 1rem;
+      position: absolute; } }
 
 .description__paragraphs {
-  padding-top: 6rem;
-  text-align: justify; }
-  @media (min-width: 40rem) {
+  padding-top: 10%; }
+  @media (min-width: 60rem) {
     .description__paragraphs {
-      width: 70%; } }
+      width: 60%; } }
 
-.video-container {
-  background-color: #FE95B3;
-  display: flex;
-  width: 100%;
+.link {
+  background-color: #3974FE;
+  color: #FFFF;
   margin-top: 5%; }
 
-.video-container--elements {
-  padding: 4rem; }
-  .video-container--elements h2 {
-    margin-bottom: 4rem; }
-  .video-container--elements a {
+.link-container {
+  margin: 0 auto;
+  padding: 1rem; }
+  @media (min-width: 40rem) {
+    .link-container {
+      padding: 1.5rem; } }
+
+.link-container__items {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: end; }
+  .link-container__items h2 {
+    margin-bottom: 2rem; }
+  .link-container__items a {
+    background-color: #FE95B3;
+    border-radius: 2rem 1rem 2rem 1rem;
     color: #0100A3;
     font-weight: bold;
-    margin-left: 80%; }
-  @media (min-width: 40rem) {
-    .video-container--elements {
-      margin-left: 50%; } }
+    padding: 1rem; }
+  @media (min-width: 60rem) {
+    .link-container__items {
+      align-items: center;
+      flex-direction: row;
+      gap: 3rem; }
+      .link-container__items h2 {
+        width: 50%; } }
+
+.to-do {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: flex-start;
+  margin-top: 5%; }
+  @media (min-width: 60rem) {
+    .to-do {
+      justify-content: space-between;
+      flex-direction: row; } }
+
+@media (min-width: 60rem) {
+  .to-do__content {
+    width: 50%; } }
+
+.to-do__items {
+  padding: 4rem;
+  border-radius: 0 1.5rem 0 1.5rem;
+  box-shadow: 0 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.25); }
+
+.to-do__title {
+  position: sticky;
+  top: 5rem;
+  background-image: url(./../../img/art-title.png);
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-position-x: right;
+  background-size: 50%; }
+  .to-do__title h2 {
+    padding-top: 20%;
+    font-size: 5.5rem; }
+  @media (min-width: 60rem) {
+    .to-do__title {
+      width: 40%; } }
 
 .donations {
   margin-top: 10%; }
@@ -697,7 +720,7 @@ p {
 .newsletter__title h3 {
   color: #FFFF;
   font-family: "Roboto", sans-serif;
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-left: 5%; }
 
 @media (min-width: 40rem) {
