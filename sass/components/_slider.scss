@@ -20,7 +20,7 @@ html {
     }
 }
 
-.sss {
+.slides {
 	height: 0;
 	margin: 0; 
 	padding: 0;
@@ -49,7 +49,7 @@ html {
 	display: block;
 }
 
-.sssnext, .sssprev {
+.slider__next--arrow, .slider__prev--arrow {
 	width: 25px;
 	height: 100%;
 	margin: 0;
@@ -58,16 +58,16 @@ html {
 	background: url('../../img/arr.png') no-repeat;
 }
 
-.sssprev {
+.slider__prev--arrow {
 	left: 3%;
 	background-position: 0 50%;
 }
 
-.sssnext {
+.slider__next--arrow {
 	right: 3%;
 	background-position: -26px 50%;
 }
 
-.sssprev:hover, .sssnext:hover {
+.slider__prev--arrow:hover, .slider__next--arrow:hover {
 	cursor: pointer;
 }
