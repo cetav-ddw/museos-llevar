@@ -1,21 +1,13 @@
 .pedagogies {
-    margin: 0 auto;
     margin-top: 10%;
-    text-align: center;
-
     h1 {
+        text-align: center;
         margin-top: 7.5rem;
-    }
-
-    p {
-        margin-bottom: 4rem;
-        margin-top: 3rem;
     }
 
     @media (min-width: 80rem) {
         p {
-            width: 65%;
-            margin: 0 auto;
+            width: 80%;
         }
     }
 }
