@@ -7,7 +7,7 @@
         let settings = $.extend({
         slideShow : true,
         startOn : 0,
-        speed : 3500,
+        speed : 100000,
         transition : 400,
         arrows : true
         }, options);
@@ -18,8 +18,8 @@
     
         let
         wrapper = $(this),
-        slides = wrapper.children().wrapAll('<div class="sss"/>').addClass('ssslide'),
-        slider = wrapper.find('.sss'),
+        slides = wrapper.children().wrapAll('<div class="slides"/>').addClass('ssslide'),
+        slider = wrapper.find('.slides'),
         slide_count = slides.length,
         transition = settings.transition,
         starting_slide = settings.startOn,
@@ -75,11 +75,11 @@
         }
     
         if (settings.arrows) {
-        slider.append('<div class="sssprev"/>', '<div class="sssnext"/>');
+        slider.append('<div class="slider__prev--arrow"/>', '<div class="slider__next--arrow"/>');
         }
     
-        next = slider.find('.sssnext'),
-        prev = slider.find('.sssprev');
+        next = slider.find('.slider__next--arrow'),
+        prev = slider.find('.slider__prev--arrow');
     
         $(window).load(function() {
     
