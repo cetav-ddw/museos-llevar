@@ -1,76 +1,101 @@
 .title_principal{
-    background-color:$dark-blue;
-    width: 100%;
-    img{
-        padding: 6rem 0 3rem 0;
-        width: 50%;
-        display: block;
-        margin: auto;
-}
-}
+  background-color:$dark-blue;
+  width: 100%;
 
-.navlist{
-display: none;
-}
-.video_principal{
-background-color: $pink;
-padding: 2.5rem 0 2.5rem 0;
-iframe{
-    width: 60%;
+  img{
     display: block;
     margin: auto;
-}
-@media(min-width: 40rem){
-   iframe{
-    height:250px;
-   }
-   .video_principal{
-       padding-bottom: 5rem;
-   }
-}
+    padding: 6rem 0 3rem 0;
+    width: 50%;
+    @media(min-width: 60rem){
+      padding: 15rem 0 3rem 0;
+      width: 70%;
+    }
+  }
+
+  @media(min-width: 60rem){
+    float: left;
+    padding-bottom: 15%;
+    width: 50%;
+  }
 }
 
-@media(min-width: 60rem){
-.video_principal, .title_principal{
-width: 50%;
-float: left;
-} 
-.video_principal{
-padding-bottom: 15rem;
-}
-.title_principal{
-padding-bottom: 20rem;
-}
-
-.clear{
-clear: both;
-}
-.sidebar{
+.navlist{
   display: none;
 }
-iframe{
+
+.video__box{
+  height: 90%;
   position: relative;
-  top: 40px;
-  left: -150px;
+  right: -5%;
+  width: 90%;
+  @media(min-width: 60rem){
+    height: 90%;
+    right: 10%;
+    top: 10rem;
+    width: 90%;
+  }
+  @media(min-width: 40rem){
+    video{
+      height: 100%;
+      top: 20rem;
+      width: 100%;
+    }
+  }
 }
+
+.video_principal{
+  background-color: $pink;
+  padding: 2.5rem 0 2.5rem 0;
+  @media(min-width: 40rem){
+    padding-bottom: 5rem;
+  }
+  @media(min-width: 60rem){
+    float: left;
+    width: 50%;
+    padding-bottom: 20%;
+  }
+}
+
+.sidebar{
+  @media(min-width: 60rem){
+    display: none;
+  }
+}
+
 .navlist{
-  display: block;
+  @media(min-width: 60rem){
+    display: block;
+  } 
 }
+
+.navlist_container{
+  @media(min-width: 60rem){
+    position: sticky;
+    top: 0;
+    z-index: 99;
+  } 
+}
+
 .navlist {
-display: flex;  
-align-items: center;
-justify-content: space-evenly;
-width: 85%;
+
+  @media(min-width: 60rem){
+    align-items: center;
+    background-color: $pink;
+    border-radius: 0.150rem;
+    display: flex;  
+    float: right;
+    height: 5rem;
+    width: 50%;
+  
     li{ 
-    
-        list-style: none;
+      margin-left: 3.5%;
+      list-style: none;
     }
     a{
-        position: relative;
-        font-size:$typo-s;
-        font-weight:bold;
-        color:$white;
-        font-family: $title-bold;
+      position: relative;
+      color:$white;
+      font-family: $main-typo;
     }
     a:after{
       content: "";
@@ -83,8 +108,10 @@ width: 85%;
       transition: 0.5s;
     }
     a:hover:after{
-        width: 100%;
-       
-      }
-}
+      width: 100%;
+    }
+    a:visited{
+      width: 100%;
+    }
+  } 
 }

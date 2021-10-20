@@ -11,25 +11,49 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
+
     <title>Museos para llevar</title>
 </head>
 
 <body>
 
-    <div class="wrapper">
-        <div id="sidebar" class="sidebar">
-            <div class="siderbar__menu">
-                <button class="toggle-btn"><img src="./img/menu.png" alt=""></button>
-            </div>
-            <div class="sidebar__links">
-                <a href="#">Museos para llevar</a>
-                <a href="#">Pedagogia</a>
-                <a href="#">Talleres</a>
-                <a href="#">Hazte Amigo</a>
-            </div>
-        </div>
-    </div>
+    <section class="navlist_container">
 
+        <nav class="navlist">
+            <li>
+                <a href="#about">Museos para llevar</a>
+            </li>
+            <li>
+                <a href="#pedagogies">Metodología</a>
+            </li>
+            <li>
+                <a href="#course">Talleres</a>
+            </li>
+            <li>
+                <a href="#donations">Hacete Amigo</a>
+            </li>
+            <li>
+                <a href="#contact">Contacto</a>
+            </li>
+        </nav>
+
+    </section>
+
+    <div id="sidebar" class="sidebar">
+
+        <div class="siderbar__menu">
+            <button class="toggle-btn"><img src="./img/menu.png" alt=""></button>
+        </div>
+
+        <div class="sidebar__links">
+            <a href="#about">Museos para llevar</a>
+            <a href="#pedagogies">Metodología</a>
+            <a href="#course">Talleres</a>
+            <a href="#donations">Hacete Amigo</a>
+            <a href="#contact">Contacto</a>
+        </div>
+
+    </div>
 
     <section>
 
@@ -38,104 +62,169 @@
                 <img src="./img/museos para llevar.png" alt="">
             </div>
         </div>
+
         <div class="video_principal">
-            <nav class="navlist">
-                <li>
-                    <a href="#">Museos para llevar</a>
-                </li>
-                <li>
-                    <a href="#">Pedagogia</a>
-                </li>
-                <li>
-                    <a href="#">Talleres</a>
-                </li>
-                <li>
-                    <a href="#">Hazte Amigo</a>
-                </li>
-            </nav>
-            <div class="video__box">
-                <iframe src="https://www.youtube.com/embed/LXb3EKWsInQ" title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-                </iframe>
+            <div>
+                <video class="video__box" src="./video/181015_12a_Venice Beach_016.mp4" controls="controls"></video>
             </div>
         </div>
+
     </section>
 
-    <section>
+    <section id="about">
+
         <div class="description wrapper">
-            <div class="description__image">
-                <img src="img/img.png">
-                <div class="description__pink-background"></div>
-            </div>
+            <aside class="description__image">
+                <img src="./img/art.png" alt="">
+            </aside>
+
             <div class="description__paragraphs">
                 <p>
-                    Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s,
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
-                    survived not only five centuries, but also
-                    the leap into electronic typesetting.
+                    El proyecto <i>Museo para Llevar</i>, presentado en conjunto por la Asociación AcciónArte e ICOM
+                    Costa Rica, ha <span class="bold-font"> resultado ganador de un Proyecto Solidario del Consejo
+                        Internacional de Museos – ICOM. </span> El proyecto surge como una iniciativa para afrontar el
+                    reto provocado por COVID-19 que
+                    imposibilitó la visitación estudiantil a museos, y puso en evidencia la brecha digital y cultural
+                    entre estudiantes urbanos y rurales, de zonas marginadas socio-económicamente y los de la clase
+                    media y alta, los de colegios públicos y privados.
                 </p>
                 <p>
-                    Is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s,
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
-                    survived not only five centuries, but also
-                    the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the
-                    1960s with the release of Letraset sheets containing
+                    <i>Museo para Llevar</i>, si bien se basa en Costa Rica, propone crear visitas virtuales
+                    interactivas a instituciones culturales y un modelo para su réplica a nivel regional e
+                    internacional, apoyando así a museos y educadores que enfrentan los mismos desafíos. El proyecto
+                    presenta un doble beneficio: <span class="bold-font">una mayor y más provechosa visitación a museos
+                        (presencial y virtual) y
+                        la incorporación de ver y experimentar el arte como parte del proceso educativo – de ver el
+                        museo
+                        como una extensión del aula.</span> Se democratiza el arte y su incorporación en la educación y
+                    el
+                    desarrollo social y se contribuye al cierre de la brecha entre la diversidad estudiantil.
                 </p>
             </div>
         </div>
-        <div class="video-container">
-            <div class="video-container--elements wrapper">
-                <h2 class="wrapper">Para acceder a los videos
-                    dar clic en el siguiente enlace</h2>
-                <a class="wrapper" href="#">VIDEOS &#8594</a>
+
+        <div class="link">
+            <div class="link-container wrapper">
+                <div class="link-container__items">
+                    <h2>Para acceder a los videos
+                        dar clic en el siguiente enlace</h2>
+                    <a href="https://vimeo.com/user154179110">VIDEOS &#8594</a>
+                </div>
             </div>
+        </div>
+
+        <div class="to-do wrapper">
+            <div class="to-do__title ">
+                <h2>¿Qué hacemos?</h2>
+            </div>
+            <div class="to-do__content">
+                <div class="to-do__items">
+                    <p>
+                        Crear una serie de videos como apoyo a la labor docente de desarrollo de habilidades de
+                        observación y pensamiento crítico, y fomentar la visitación virtual y presencial al museo. En
+                        todos
+                        los videos hay actividades interactivas dirigidas a los estudiantes quienes están viendo el
+                        video
+                        desde sus casas (durante la pandemia), o en su aula (post pandemia). El formato de los videos es
+                        asincrónico, lo cual permite la flexibilidad del manejo del tiempo, previendo que no todos
+                        tienen
+                        acceso a una conexión a Internet y permitiendo su utilización por los docentes en las aulas en
+                        el
+                        momento adecuado.
+                    </p>
+                </div>
+                <div class="to-do__items ">
+                    <p>
+                        Crear las visitas virtuales a tres instituciones culturales: Centro Cultural Histórico José
+                        Figueres
+                        Ferrer, el Teatro Nacional de Costa Rica y los Museos de Banco Central de Costa Rica.
+                    </p>
+                </div>
+                <div class="to-do__items">
+                    <p>
+                        Elaborar una guía didáctica escrita disponible en línea para los docentes para incorporar las
+                        mejores prácticas del material con sus estudiantes.
+                    </p>
+                </div>
+                <div class="to-do__items">
+                    <p>
+                        Fortalecer la función social de las instituciones culturales como espacios pedagógicos, al
+                        correlacionar el trabajo de los departamentos de educación de los museos con la estrategia
+                        metodológica Piensa en Arte, parte oficial del currículo del II Ciclo de la Educación Básica,
+                        garantizando la incorporación del arte como un eje transversal en la educación pública. Se
+                        relaciona
+                        además con otras metodologías que utilizan preguntas abiertas para crear la construcción social
+                        de
+                        significados al observar una obra de arte.
+                    </p>
+                </div>
+                <div class="to-do__items">
+                    <p>
+                        Construir una experiencia de capacitación y reforzamiento de la estrategia metodológica Piensa
+                        en
+                        Arte de manera virtual para docentes.
+                    </p>
+                </div>
+                <div class="to-do__items">
+                    <p>
+                        Crear una ruta virtual para compartir e intercambiar obras de arte entre instituciones
+                        culturales,
+                        tanto nacionales como internacionales.
+                    </p>
+                </div>
+            </div>
+
         </div>
     </section>
 
     <aside class="between-sections"></aside>
 
-    <section class="pedagogies wrapper">
+    <section id="pedagogies" class="pedagogies wrapper">
+
         <h1>Estrategia Metodológica</h1>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
-            electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
-            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
-            Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+        <p class="wrapper">Combinando el uso de diversas herramientas pedagógicas como preguntas abiertas, el
+            lenguaje hipotético y
+            la
+            reflexión, fomenta en los estudiantes la observación, el análisis, la interpretación, y la apreciación
+            de
+            las artes visuales. Las preguntas utilizadas incitan a una variedad de respuestas, no son conductistas y
+            no
+            invitan solamente a una reacción o respuesta particular de los participantes frente a la obra de arte.
+        </p>
+        <p class="wrapper">
+            Por medio de la reflexión, la metodología incentiva a los estudiantes a comprender sus interpretaciones,
+            al
+            verbalizar sus observaciones de evidencias visuales específicas.
+        </p>
+        <p class="wrapper">
+            La conexión fundamental entre <i>Yo pienso… porque veo…</i> es uno de los pasos iniciales hacia el
+            desarrollo de la metacognición.
+        </p>
 
         <div class="pedagogies_cards">
             <div class="pedagogies_cards_information pedagogies__cards--white">
-                <img src="img/MPLL-Icons-1.svg"
+                <img src="./img/MPLL-Icons-1.svg"
                     alt="Pensamiento critico tiene forma de cerebro y dentro un signo de exclamación">
-                <h2>Pensamiento</h2>
-                <p class="js-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, explicabo!</p>
-                <input class="pedagogies_cards--arrow js-arrow" type="checkbox">
+                <h2>Pensamiento Crítico</h2>
             </div>
 
             <div class="pedagogies_cards_information pedagogies__cards--orange">
-                <img src="img/MPLL-Icons-3.svg" alt="Observación es un ojo de color celeste">
+                <img src="./img/MPLL-Icons-3.svg" alt="Observación es un ojo de color celeste">
                 <h2>Observación</h2>
-                <p class="js-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, explicabo!</p>
-                <input class="pedagogies_cards--arrow js-arrow" type="checkbox">
             </div>
 
             <div class="pedagogies_cards_information pedagogies__cards--pink">
-                <img src="img/MPLL-Icons-2.svg" alt="Vocabulario es una boca de color rojo con letras dentro">
-                <h2>Vocabulario</h2>
-                <p class="js-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, explicabo!</p>
-                <input class="pedagogies_cards--arrow js-arrow" type="checkbox">
+                <img src="./img/MPLL-Icons-2.svg" alt="Vocabulario es una boca de color rojo con letras dentro">
+                <h2>Uso del Vocabulario</h2>
             </div>
 
             <div class="pedagogies_cards_information pedagogies__cards--blue">
-                <img src="img/MPLL-Icons-4.svg" alt="Escucha es una oreja con un arete de color celeste">
-                <h2>Escucha</h2>
-                <p class="js-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, explicabo!</p>
-                <input class="pedagogies_cards--arrow js-arrow" type="checkbox">
+                <img src="./img/MPLL-Icons-4.svg" alt="Escucha es una oreja con un arete de color celeste">
+                <h2>Escucha Activa</h2>
                 </div->
             </div>
+        </div>
     </section>
 
     <section class="slider--content wrapper">
@@ -182,26 +271,50 @@
 
     <aside class="between-sections sections-right"></aside>
 
-    <section class="info-taller wrapper">
-        <div class="info-taller_text">
-            <h2>Talleres</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                scrambled it to make a type specimen book. It has survived not only five centuries,</p>
+    <section id="course" class="wrapper">
+        <div class="info-taller">
+            <h1>Talleres</h1>
+
+            <div class="info-taller__items">
+                <img src="./img/pensamiento-visual.svg" alt="">
+                <div>
+                    <p>
+                        Visual Thinking utiliza una técnica de pensamiento visual que promueve el desarrollo de
+                        habilidades para una comunicación asertiva, tales como agudizar la observación, la escucha
+                        activa y motivar una verbalización efectiva de las ideas lo cual facilita el intercambio de
+                        información crítica, pensamiento crítico, comunicación asertiva y razonamiento basado en
+                        evidencias.</p>
+                    <p> El arte es un vehículo para el desarrollo de habilidades blandas necesarias para el trabajo en
+                        equipo, la convivencia democrática, tolerancia, respeto a la opinión y el fortalecimiento del
+                        autoestima a través del valor de la expresión.
+                    </p>
+                    <p>
+
+                        El programa Visual está estructurado alrededor de una experiencia de
+                        aprendizaje interactivo. Tomando como base una dinámica de conversaciones en torno a obras de
+                        arte,cada sesión promueve un ambiente de observación, escucha atenta y diálogo. Los y las
+                        participantes expresan sus opiniones libremente y comparten diversos puntos de vista, lo cual
+                        contribuye a mejorar las relaciones interpersonales y los procesos de toma de decisiones
+                    </p>
+                </div>
+            </div>
+
+            <p>
+                Con la guía del/la tallerista, la metodología contribuye al desarrollo de habilidades blandas
+                estimulando el pensamiento crítico, el pensamiento creativo y otras destrezas que los participantes
+                utilizan en su vida diaria como parte de su trabajo intelectual y de
+                comunicación con los demás. A medida que avanza el curso, los participantes observan imágenes más
+                complejas y participan de manera individual y grupal en actividades que les permiten poner en
+                práctica las habilidades de pensamiento crítico y creativo que van adquiriendo. Al hacer de esta
+                conversación un hábito, se desarrollan destrezas de expresión oral y se logra una mayor seguridad al
+                expresarse en público.
+
+            </p>
+
         </div>
-        <div class="info-taller_img">
-            <div>
-                <img src="./img/Group 86.png" alt="">
-            </div>
-            <div>
-                <img src="./img/Rectangle 15.png" alt="">
-            </div>
-            <div>
-                <img src="./img/Rectangle 16.png" alt="">
-            </div>
-        </div>
+
         <div class="info-course_text">
-            <h2>Cursos</h2>
+            <h1>Cursos</h1>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                 industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
                 scrambled it to make a type specimen book. It has survived not only five centuries, </p>
@@ -211,38 +324,99 @@
     <div class="clear">
     </div>
 
-    <section class="newsletter wrapper">
-        <div class="newsletter_box">
-            <p>Recibe toda la informacion sobre nuestros eventos</p>
-            <input type="email" placeholder="Email">
-            <button>Continue</button>
+    <div class="newsletter">
+
+        <div class="newsletter__title">
+            <h3>Podes suscribirte a nuestro newsletter y conoce más sobre nuestros talleres</h3>
         </div>
-    </section>
+
+        <div id="mc_embed_signup" class="newsletter__mailchimp">
+            <form
+                action="https://contextodigital.us5.list-manage.com/subscribe/post?u=0460fca35d2fa74e5eaedfacc&amp;id=2d41a0dc94"
+                method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                target="_blank" novalidate>
+                <div id="mc_embed_signup_scroll">
+
+                    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address"
+                        required>
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                            name="b_0460fca35d2fa74e5eaedfacc_2d41a0dc94" tabindex="-1" value=""></div>
+                    <div class="button-mailchimp"><input type="submit" value="Suscribirme" name="subscribe"
+                            id="mc-embedded-subscribe" class="button"></div>
+                </div>
+            </form>
+        </div>
+    </div>
+
 
     <aside class="between-sections"></aside>
 
-    <section class="form">
+    <section id="donations" class="donations wrapper">
+        <div class="donations__wrapper">
+            <div class="donations__content">
+                <h1>Hacete amigo</h1>
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                    classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin
+                    professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,
+                    consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical
+                    literature, discovered the undoubtable source. </p>
+
+                <p> Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes
+                    of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very
+                    popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes
+                    from a line in section 1.10.32.</p>
+                <p> Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes
+                    of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very
+                    popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes
+                    from a line in section 1.10.32.</p>
+            </div>
+            <div class="donations__options">
+                <h2>Puedes donar aquí</h2>
+                <div class="donations__options-items">
+                    <img src="./img/lapices.svg" alt="">
+                    <p> <span>$10</span>Con esta donación, podremos ...</p>
+                </div>
+                <div class="donations__options-items">
+                    <img src="./img/mapamundi.svg" alt="">
+                    <p><span>$50</span>Con esta donación, podremos ...</p>
+                </div>
+                <div class="donations__options-items">
+                    <img src="./img/mochila.svg" alt="">
+                    <p><span>$100</span> Con esta donación, podremos ...</p>
+                </div>
+                <form action="https://www.paypal.com/donate" method="post" target="_top">
+                    <input type="hidden" name="hosted_button_id" value="YM5YUMBDXJL5S" />
+                    <input class="donations__button" type="image"
+                        src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit"
+                        title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                    <img alt="" border="0" src="https://www.paypal.com/en_CR/i/scr/pixel.gif" width="1" height="1" />
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="form">
         <aside class="form__decoration">
         </aside>
         <div class="form__content wrapper">
-            <h1>Hablemos sobre Museos para llevar</h1>
+            <h1>Hablemos sobre <br> Museos para llevar</h1>
             <p>Lorem Ipsum is simply dummy text of the printing .</p>
 
             <form action="https://formspree.io/f/xdoyjyyn" method="POST" autocomplete="off">
-                <div class="form__content--input ">
-                    <div>
+                <div class="form__content--input center">
+                    <div class="form__items">
                         <label class="form__content--label" for="name">Nombre</label>
-                        <input id="name" type="text" name="input-name" autofocus>
+                        <input id="name" type="text" name="input-name" required>
                     </div>
-                    <div>
+                    <div class="form__items">
                         <label class="form__content--label" for="email">Correo</label>
-                        <input id="email" type="email" name="input-email">
+                        <input id="email" type="email" name="input-email" required>
                     </div>
-                    <div>
+                    <div class="form__items">
                         <label class="form__content--label" for="issue">Asunto</label>
                         <input id="issure" type="text" name="input-subject">
                     </div>
-                    <div>
+                    <div class="form__items">
                         <label class="form__content--label" for="message">Mensaje</label>
                         <textarea id="message" class="form__content--text" name="message" type="text"></textarea>
                     </div>
@@ -254,12 +428,16 @@
 
     <footer class="footer">
         <p>© 2021 Copyright. Todos los derechos reservados</p>
-        <img src="img/MPLL-Icon-Logo.svg"
+        <img src="./img/MPLL-Icon-Logo.svg"
             alt="logo de patrocinadores, museos para llevar, consejo internacional de museos y acción arte">
-        <div class="footer__anchor">
-            <a href="#"><img src="img/arrow-icon.png" alt="Flecha que direcciona hacia el encabezado"></a>
+
+        <div class="go-top-container">
+            <div class="go-top-button">
+                <i class="fas fa-chevron-up">↑</i>
+            </div>
         </div>
     </footer>
+
     <script>
         $(document).ready(function(){
             $('.slider').sss({
@@ -267,9 +445,13 @@
             });
         });
         </script>
-    <script src="js/cards.js"></script>
+
     <script src="js/sidebar.js"></script>
     <script src="js/slider.js"></script>
+    <script src="./js/arrow-up.js"></script>
+    <script
+        id="mcjs">!function (c, h, i, m, p) { m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p) }(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/0460fca35d2fa74e5eaedfacc/6c41c1f6ad57372ee67de7760.js");</script>
+    <script src="./js/cards.js"></script>
 
 </body>
 

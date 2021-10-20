@@ -1,14 +1,20 @@
 a {
   text-decoration: none ;
+  font-size: 1.4rem;
+  @media (min-width: 80rem) {
+    font-size: 1.8rem;
+  }
 }
 
 body {
   margin: 0;
+  color: $black;
 }
 
 html {
   font-size: 10px;
   font-family: $main-typo;
+  color: $black;
   margin: 0;
 }
 
@@ -16,7 +22,6 @@ h1 {
   font-family: $title-bold;
   font-size: $typo-l;
   text-transform: uppercase;
-
   @media (min-width: 60rem) {
     font-size: $typo-xxl;
   }
@@ -31,10 +36,10 @@ h2 {
 }
 
 p {
-  color: $black;
   font-size: $typo-s;
-  line-height: 2.5rem;
-  @media (min-width: 60rem) {
+  line-height: 1.7;
+  text-align: justify;
+  @media (min-width: 80rem) {
     font-size: $typo-m;
   }
 }
@@ -47,6 +52,9 @@ li{
   margin-left: auto;
   margin-right: auto;
   width: 85%;
+  @media (min-width: 120rem) {
+    width: 130rem;
+  } 
 }
 
 .between-sections {
@@ -65,4 +73,12 @@ li{
 
 .sections-right {
   background-color: $orange;
+}
+
+.clear{
+  clear: both;
+}
+
+.bold-font {
+  font-weight: bold;
 }

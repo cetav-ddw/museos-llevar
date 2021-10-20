@@ -1,42 +1,17 @@
 .info-taller{
     margin-top: 10%;
-    padding: 0 0 8rem 0;
-    p{
-        margin:0 0 2.5rem 0;
-    }
-     img{
-        padding:  1rem 0 1rem 0;
-        width: 60%;
-        display: block;
-        margin: auto;
-    }
-    h2, p{
-      text-align: left;
-      padding: 0 1.563rem 0 1.563rem;
-    }
-    @media(min-width: 40rem){
-           h2,p{
-            margin:35px 0 2.5rem 50px;
-           }
-           img{
-               width: 60%;
-           }
-        }
+    text-align: center;
 }
-@media(min-width: 60rem){
-    .info-taller_img{
-        margin-left: 5rem;
-    }
-    .info-taller img{
-     width: 30%;
-     float: left;
-     padding:1rem 1rem 1rem 1rem;
-    }
-    .info-course_text{
-       float: right;
-       width: 40%;
-    }
-    .info-taller_text{
-        width: 40%;
+
+.info-taller__items{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    @media(min-width: 60rem){
+        img {
+            width: 50%;
+        }
+        flex-direction: row;
     }
 }
