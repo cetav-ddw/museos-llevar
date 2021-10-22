@@ -21,7 +21,6 @@ html {
 h1 {
   font-family: $title-bold;
   font-size: $typo-l;
-  text-transform: uppercase;
   @media (min-width: 60rem) {
     font-size: $typo-xxl;
   }
@@ -29,10 +28,22 @@ h1 {
 
 h2 {
   font-family: $title-bold;
+  font-size: $typo-l;
+  @media (min-width: 80rem) {
+    font-size: $typo-xl;
+  }
+}
+
+h3 {
+  font-family: $title-bold;
   font-size: $typo-m;
   @media (min-width: 80rem) {
     font-size: $typo-l;
   }
+}
+
+h1, h2 {
+  text-transform: uppercase;
 }
 
 p {
@@ -42,6 +53,10 @@ p {
   @media (min-width: 80rem) {
     font-size: $typo-m;
   }
+}
+
+li{
+  list-style: none;
 }
 
 .wrapper {

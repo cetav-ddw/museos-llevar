@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 @font-face {
   font-family: 'NationalBold';
@@ -27,18 +26,27 @@ html {
 
 h1 {
   font-family: "NationalBold", sans-serif;
-  font-size: 3.5rem;
-  text-transform: uppercase; }
+  font-size: 3rem; }
   @media (min-width: 60rem) {
     h1 {
       font-size: 5.5rem; } }
 
 h2 {
   font-family: "NationalBold", sans-serif;
-  font-size: 1.8rem; }
+  font-size: 3rem; }
   @media (min-width: 80rem) {
     h2 {
-      font-size: 3.5rem; } }
+      font-size: 4rem; } }
+
+h3 {
+  font-family: "NationalBold", sans-serif;
+  font-size: 1.8rem; }
+  @media (min-width: 80rem) {
+    h3 {
+      font-size: 3rem; } }
+
+h1, h2 {
+  text-transform: uppercase; }
 
 p {
   font-size: 1.5rem;
@@ -47,6 +55,9 @@ p {
   @media (min-width: 80rem) {
     p {
       font-size: 1.8rem; } }
+
+li {
+  list-style: none; }
 
 .wrapper {
   margin-left: auto;
@@ -449,6 +460,68 @@ p {
     color: white;
     font-size: 1.8rem; }
 
+html {
+  position: relative;
+  min-height: 100%; }
+
+.slider--content {
+  margin-top: 15%;
+  margin-bottom: 15%; }
+
+.content-text {
+  width: 100%;
+  background-color: #0100A3;
+  padding: 2rem; }
+  .content-text p {
+    padding-top: 1rem;
+    color: #FFFF;
+    width: 85%; }
+
+.slides {
+  height: 0;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: block;
+  overflow: hidden; }
+
+.ssslide {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  overflow: hidden; }
+
+.ssslide img {
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: block; }
+
+.slider__next--arrow, .slider__prev--arrow {
+  width: 25px;
+  height: 100%;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  background: url("../../img/arr.png") no-repeat; }
+
+.slider__prev--arrow {
+  left: 3%;
+  background-position: 0 50%; }
+
+.slider__next--arrow {
+  right: 3%;
+  background-position: -26px 50%; }
+
+.slider__prev--arrow:hover, .slider__next--arrow:hover {
+  cursor: pointer; }
+
 .info-taller {
   margin-top: 10%;
   text-align: center; }
@@ -468,9 +541,6 @@ p {
   .pedagogies h1 {
     text-align: center;
     margin-top: 7.5rem; }
-  @media (min-width: 80rem) {
-    .pedagogies p {
-      width: 80%; } }
 
 .pedagogies_cards {
   display: flex;
@@ -490,7 +560,6 @@ p {
   display: flex;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
   flex-direction: column;
-  height: 100%;
   margin: 0 auto;
   position: relative;
   width: 70%; }
@@ -508,45 +577,23 @@ p {
 
 .pedagogies__cards--white {
   background-color: #FFFF; }
-  .pedagogies__cards--white p, .pedagogies__cards--white input, .pedagogies__cards--white h2 {
+  .pedagogies__cards--white p, .pedagogies__cards--white h2 {
     color: #0100A3; }
 
 .pedagogies__cards--orange {
   background-color: #EC4627; }
-  .pedagogies__cards--orange p, .pedagogies__cards--orange input, .pedagogies__cards--orange h2 {
+  .pedagogies__cards--orange p, .pedagogies__cards--orange h2 {
     color: #FFFF; }
 
 .pedagogies__cards--pink {
   background-color: #FE95B3; }
-  .pedagogies__cards--pink p, .pedagogies__cards--pink input, .pedagogies__cards--pink h2 {
+  .pedagogies__cards--pink p, .pedagogies__cards--pink h2 {
     color: #0100A3; }
 
 .pedagogies__cards--blue {
   background-color: #0100A3; }
-  .pedagogies__cards--blue p, .pedagogies__cards--blue input, .pedagogies__cards--blue h2 {
+  .pedagogies__cards--blue p, .pedagogies__cards--blue h2 {
     color: #FFFF; }
-
-.pedagogies_cards--arrow {
-  -webkit-appearance: none;
-  bottom: 2rem;
-  font-size: 1.8rem;
-  position: absolute;
-  right: 2rem; }
-
-.pedagogies_cards--arrow:before {
-  content: "↓";
-  cursor: pointer; }
-
-.pedagogies_cards--arrow:checked:before {
-  content: "↑";
-  cursor: pointer; }
-
-.pedagogies_cards--arrow:hover {
-  transform: scale(2);
-  transition: 0.5s; }
-
-.js-content {
-  display: none; }
 
 .description {
   display: flex;
@@ -604,11 +651,12 @@ p {
 .to-do {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 3rem;
-  align-items: flex-start;
   margin-top: 5%; }
   @media (min-width: 60rem) {
     .to-do {
+      align-items: flex-start;
       justify-content: space-between;
       flex-direction: row; } }
 
@@ -616,25 +664,35 @@ p {
   .to-do__content {
     width: 50%; } }
 
-.to-do__items {
-  padding: 4rem;
-  border-radius: 0 1.5rem 0 1.5rem;
-  box-shadow: 0 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.25); }
+.to-do__content p {
+  padding: 2rem;
+  border-radius: 0 1rem 1rem 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-top: 2rem; }
 
-.to-do__title {
-  position: sticky;
-  top: 5rem;
-  background-image: url(./../../img/art-title.png);
-  background-repeat: no-repeat;
-  background-position-y: bottom;
-  background-position-x: right;
-  background-size: 50%; }
-  .to-do__title h2 {
-    padding-top: 20%;
-    font-size: 5.5rem; }
-  @media (min-width: 60rem) {
-    .to-do__title {
-      width: 40%; } }
+.to-do__content p::first-letter {
+  font-size: 3rem;
+  font-weight: bold; }
+
+.to-do__content-icon {
+  font-size: 3rem;
+  font-weight: bold; }
+
+.to-do__title h2 {
+  padding-top: 10%; }
+
+@media (min-width: 60rem) {
+  .to-do__title {
+    position: sticky;
+    top: 5rem;
+    background-image: url(./../../img/art-title.png);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: right;
+    background-size: 50%;
+    width: 40%; }
+    .to-do__title h2 {
+      padding-top: 50%; } }
 
 .donations {
   margin-top: 10%; }
@@ -696,7 +754,7 @@ p {
   .donations__options-items span {
     color: #FE95B3;
     font-family: "NationalBold", sans-serif;
-    font-size: 3.5rem;
+    font-size: 3rem;
     padding-right: 1rem; }
 
 .donations__options-items:hover {
