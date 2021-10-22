@@ -35,8 +35,10 @@
         padding-top: 2rem;
     }
 
-    h2 {
-        padding-bottom: 4rem;
+    p {
+        font-size: $typo-m;
+        text-align: center;
+        font-weight: bold;
     }
 
     @media (min-width: 40rem) {
@@ -45,12 +47,16 @@
 
     @media (min-width: 60rem) {
         width: 20%;
+
+        p {
+            font-size: $typo-l;
+        }
     }
 }
 .pedagogies__cards--white {
     background-color: $white;
 
-    p, h2{
+    p{
         color: $dark-blue;
     }
 }
@@ -58,7 +64,7 @@
 .pedagogies__cards--orange {
     background-color: $orange;
 
-    p, h2 {
+    p{
         color: $white;
     }
 }
@@ -66,7 +72,7 @@
 .pedagogies__cards--pink {
     background-color: $pink;
 
-    p, h2 {
+    p{
         color: $dark-blue;
     }
     
@@ -75,7 +81,7 @@
 .pedagogies__cards--blue {
     background-color: $dark-blue;
 
-    p, h2 {
+    p{
         color: $white;
     }
 }

@@ -573,33 +573,37 @@ html {
   .pedagogies_cards_information img {
     width: 80%;
     padding-top: 2rem; }
-  .pedagogies_cards_information h2 {
-    padding-bottom: 4rem; }
+  .pedagogies_cards_information p {
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: bold; }
   @media (min-width: 40rem) {
     .pedagogies_cards_information {
       width: 40%; } }
   @media (min-width: 60rem) {
     .pedagogies_cards_information {
-      width: 20%; } }
+      width: 20%; }
+      .pedagogies_cards_information p {
+        font-size: 3rem; } }
 
 .pedagogies__cards--white {
   background-color: #FFFF; }
-  .pedagogies__cards--white p, .pedagogies__cards--white h2 {
+  .pedagogies__cards--white p {
     color: #0100A3; }
 
 .pedagogies__cards--orange {
   background-color: #EC4627; }
-  .pedagogies__cards--orange p, .pedagogies__cards--orange h2 {
+  .pedagogies__cards--orange p {
     color: #FFFF; }
 
 .pedagogies__cards--pink {
   background-color: #FE95B3; }
-  .pedagogies__cards--pink p, .pedagogies__cards--pink h2 {
+  .pedagogies__cards--pink p {
     color: #0100A3; }
 
 .pedagogies__cards--blue {
   background-color: #0100A3; }
-  .pedagogies__cards--blue p, .pedagogies__cards--blue h2 {
+  .pedagogies__cards--blue p {
     color: #FFFF; }
 
 .description {
