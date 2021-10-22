@@ -82,10 +82,10 @@
 }
 
 .donations__options-items:hover{
-    -webkit-animation: tiembla 0.1s;
+    -webkit-animation: tiembla 0.9s;
   
   @-webkit-keyframes tiembla{
-    0%  { -webkit-transform:rotateZ(-5deg); }
-    50% { -webkit-transform:rotateZ( 0deg) scale(.8); }
-    100%{ -webkit-transform:rotateZ( 5deg); }
+    0%  { -webkit-transform:rotateZ(-1deg); }
+    50% { -webkit-transform:rotateZ( 0deg) scale(.9); }
+    100%{ -webkit-transform:rotateZ( 1deg); }
 }}

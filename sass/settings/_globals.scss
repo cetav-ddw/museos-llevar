@@ -1,5 +1,9 @@
 a {
   text-decoration: none ;
+  font-size: 1.4rem;
+  @media (min-width: 80rem) {
+    font-size: 1.8rem;
+  }
 }
 
 body {
@@ -10,14 +14,13 @@ body {
 html {
   font-size: 10px;
   font-family: $main-typo;
+  color: $black;
   margin: 0;
 }
 
 h1 {
   font-family: $title-bold;
   font-size: $typo-l;
-  text-transform: uppercase;
-
   @media (min-width: 60rem) {
     font-size: $typo-xxl;
   }
@@ -25,24 +28,44 @@ h1 {
 
 h2 {
   font-family: $title-bold;
+  font-size: $typo-l;
+  @media (min-width: 80rem) {
+    font-size: $typo-xl;
+  }
+}
+
+h3 {
+  font-family: $title-bold;
   font-size: $typo-m;
   @media (min-width: 80rem) {
     font-size: $typo-l;
   }
 }
 
+h1, h2 {
+  text-transform: uppercase;
+}
+
 p {
   font-size: $typo-s;
-  line-height: 1.5;
+  line-height: 1.7;
+  text-align: justify;
   @media (min-width: 80rem) {
     font-size: $typo-m;
   }
+}
+
+li{
+  list-style: none;
 }
 
 .wrapper {
   margin-left: auto;
   margin-right: auto;
   width: 85%;
+  @media (min-width: 120rem) {
+    width: 130rem;
+  } 
 }
 
 .between-sections {
@@ -65,4 +88,8 @@ p {
 
 .clear{
   clear: both;
+}
+
+.bold-font {
+  font-weight: bold;
 }
