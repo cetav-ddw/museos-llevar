@@ -38,6 +38,7 @@
 
     p {
         font-size: $typo-l;
+
         text-align: center;
         font-weight: bold;
     }
@@ -48,6 +49,10 @@
 
     @media (min-width: 60rem) {
         width: 20%;
+
+        p {
+            font-size: $typo-l;
+        }
     }
 }
 .pedagogies__cards--white {
