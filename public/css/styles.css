@@ -465,8 +465,7 @@ html {
   min-height: 100%; }
 
 .slider--content {
-  margin-top: 15%;
-  margin-bottom: 15%; }
+  margin-top: 10%; }
 
 .content-text {
   width: 100%;
@@ -561,13 +560,15 @@ html {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
   flex-direction: column;
   margin: 0 auto;
+  padding: 1rem;
   position: relative;
   width: 70%; }
   .pedagogies_cards_information img {
     width: 80%;
     padding-top: 2rem; }
   .pedagogies_cards_information p {
-    font-size: 1.8rem;
+    font-size: 3rem;
+
     text-align: center;
     font-weight: bold; }
   @media (min-width: 40rem) {
