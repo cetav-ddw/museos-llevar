@@ -40,7 +40,7 @@ h2 {
 
 h3 {
   font-family: "NationalBold", sans-serif;
-  font-size: 1.8rem; }
+  font-size: 1.6rem; }
   @media (min-width: 80rem) {
     h3 {
       font-size: 3rem; } }
@@ -49,12 +49,12 @@ h1, h2 {
   text-transform: uppercase; }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   line-height: 1.7;
   text-align: justify; }
   @media (min-width: 80rem) {
     p {
-      font-size: 1.8rem; } }
+      font-size: 1.6rem; } }
 
 li {
   list-style: none; }
@@ -136,7 +136,7 @@ li {
     box-shadow: 0 0px 2px #f7f7f7; }
 
 .form__content--label {
-  font-size: 1.5rem; }
+  font-size: 1.4rem; }
 
 .form__content--text {
   height: 12rem; }
@@ -296,7 +296,7 @@ li {
     box-shadow: 0 0px 2px #f7f7f7; }
 
 .form__content--label {
-  font-size: 1.5rem; }
+  font-size: 1.4rem; }
 
 .form__content--text {
   height: 12rem; }
@@ -462,7 +462,7 @@ li {
     display: flex;
     padding: 2rem;
     color: white;
-    font-size: 1.8rem; }
+    font-size: 1.6rem; }
 
 html {
   position: relative;
@@ -606,28 +606,40 @@ html {
   .pedagogies__cards--blue p {
     color: #FFFF; }
 
+#about {
+  background-color: #0100A3; }
+
+#to-do {
+  background-color: #3974FE; }
+
 .description {
+  align-items: center;
   display: flex;
+  flex-direction: column;
   justify-content: end;
   position: relative; }
+  .description p {
+    color: #FFFF; }
+  @media (min-width: 50rem) {
+    .description {
+      flex-direction: row; } }
 
 .description__image {
-  display: none; }
-  @media (min-width: 60rem) {
+  margin-top: 10%;
+  width: 70%; }
+  @media (min-width: 50rem) {
     .description__image {
-      display: inline-block;
-      width: 30%;
-      left: 1rem;
-      position: absolute; } }
+      margin-top: 0;
+      width: 50%; } }
 
 .description__paragraphs {
-  padding-top: 10%; }
-  @media (min-width: 60rem) {
+  padding-top: 5%; }
+  @media (min-width: 50rem) {
     .description__paragraphs {
-      width: 60%; } }
+      width: 50%; } }
 
 .link {
-  background-color: #3974FE;
+  background-color: #FE95B3;
   color: #FFFF;
   margin-top: 5%; }
 
@@ -646,12 +658,12 @@ html {
   .link-container__items h2 {
     margin-bottom: 2rem; }
   .link-container__items a {
-    background-color: #FE95B3;
+    background-color: #0100A3;
     border-radius: 2rem 1rem 2rem 1rem;
-    color: #0100A3;
+    color: #FFFF;
     font-weight: bold;
     padding: 1rem; }
-  @media (min-width: 60rem) {
+  @media (min-width: 50rem) {
     .link-container__items {
       align-items: center;
       flex-direction: row;
@@ -661,49 +673,45 @@ html {
 
 .to-do {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   align-items: center;
-  gap: 3rem;
-  margin-top: 5%; }
-  @media (min-width: 60rem) {
+  gap: 3rem; }
+  @media (min-width: 50rem) {
     .to-do {
-      align-items: flex-start;
       justify-content: space-between;
       flex-direction: row; } }
 
-@media (min-width: 60rem) {
-  .to-do__content {
-    width: 50%; } }
+.to-do__content {
+  background-color: #FFFF;
+  margin-bottom: 6rem; }
+  .to-do__content p {
+    color: #0100A3; }
+  @media (min-width: 50rem) {
+    .to-do__content {
+      width: 50%; } }
 
-.to-do__content p {
-  padding: 2rem;
-  border-radius: 0 1rem 1rem 0;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  margin-top: 2rem; }
+.to-do__content--items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem; }
+  .to-do__content--items img {
+    width: 30%; }
+  @media (min-width: 50rem) {
+    .to-do__content--items {
+      padding: 4rem 4rem 0rem 1rem;
+      flex-direction: row; } }
 
-.to-do__content p::first-letter {
-  font-size: 3rem;
-  font-weight: bold; }
-
-.to-do__content-icon {
-  font-size: 3rem;
-  font-weight: bold; }
-
-.to-do__title h2 {
-  padding-top: 10%; }
-
-@media (min-width: 60rem) {
-  .to-do__title {
-    position: sticky;
-    top: 5rem;
-    background-image: url(./../../img/art-title.png);
-    background-repeat: no-repeat;
-    background-position-y: bottom;
-    background-position-x: right;
-    background-size: 50%;
-    width: 40%; }
-    .to-do__title h2 {
-      padding-top: 50%; } }
+.to-do__title {
+  text-align: center;
+  width: 80%; }
+  .to-do__title h1 {
+    color: #FFFF; }
+  .to-do__title img {
+    width: 50%; }
+  @media (min-width: 50rem) {
+    .to-do__title {
+      width: 40%; } }
 
 .donations {
   margin-top: 10%; }
