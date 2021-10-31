@@ -26,24 +26,24 @@ html {
 
 h1 {
   font-family: "NationalBold", sans-serif;
-  font-size: 3rem; }
+  font-size: 4rem; }
   @media (min-width: 60rem) {
     h1 {
-      font-size: 5.5rem; } }
+      font-size: 7rem; } }
 
 h2 {
   font-family: "NationalBold", sans-serif;
-  font-size: 3rem; }
+  font-size: 4rem; }
   @media (min-width: 80rem) {
     h2 {
-      font-size: 4rem; } }
+      font-size: 5rem; } }
 
 h3 {
   font-family: "NationalBold", sans-serif;
   font-size: 1.6rem; }
   @media (min-width: 80rem) {
     h3 {
-      font-size: 3rem; } }
+      font-size: 4rem; } }
 
 h1, h2 {
   text-transform: uppercase; }
@@ -85,6 +85,12 @@ li {
 
 .clear {
   clear: both; }
+
+.b-blue {
+  background-color: #0100A3; }
+
+.b-blue--l {
+  background-color: #3974FE; }
 
 .bold-font {
   font-weight: bold; }
@@ -542,11 +548,48 @@ html {
 .info-bottom {
   margin-bottom: 10%; }
 
-.pedagogies {
-  margin-top: 10%; }
-  .pedagogies h1 {
-    text-align: center;
-    margin-top: 7.5rem; }
+.metodologies {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem; }
+  @media (min-width: 50rem) {
+    .metodologies {
+      flex-direction: row; } }
+  .metodologies h1 {
+    color: #FFFF; }
+
+.metodologies__title img {
+  width: 70%; }
+
+@media (min-width: 50rem) {
+  .metodologies__title {
+    position: relative;
+    width: 50%; }
+    .metodologies__title img {
+      position: absolute;
+      right: 0;
+      width: 80%; }
+    .metodologies__title h1 {
+      margin-top: 38rem; } }
+
+.metodologies__text {
+  margin-bottom: 3rem; }
+  .metodologies__text p {
+    font-weight: bold;
+    text-transform: uppercase; }
+  @media (min-width: 50rem) {
+    .metodologies__text {
+      margin: 2rem;
+      flex-direction: row; } }
+
+.metodologies__text--pink {
+  font-size: 4rem;
+  color: #FE95B3;
+  margin: 0; }
+
+.metodologies__text--white {
+  color: #FFFF; }
 
 .pedagogies_cards {
   display: flex;
@@ -574,7 +617,7 @@ html {
     width: 80%;
     padding-top: 2rem; }
   .pedagogies_cards_information p {
-    font-size: 3rem;
+    font-size: 4rem;
     text-align: center;
     font-weight: bold; }
   @media (min-width: 40rem) {
@@ -584,7 +627,7 @@ html {
     .pedagogies_cards_information {
       width: 20%; }
       .pedagogies_cards_information p {
-        font-size: 3rem; } }
+        font-size: 4rem; } }
 
 .pedagogies__cards--white {
   background-color: #FFFF; }
@@ -606,12 +649,6 @@ html {
   .pedagogies__cards--blue p {
     color: #FFFF; }
 
-#about {
-  background-color: #0100A3; }
-
-#to-do {
-  background-color: #3974FE; }
-
 .description {
   align-items: center;
   display: flex;
@@ -630,7 +667,9 @@ html {
   @media (min-width: 50rem) {
     .description__image {
       margin-top: 0;
-      width: 50%; } }
+      width: 50%; }
+      .description__image img {
+        width: 70%; } }
 
 .description__paragraphs {
   padding-top: 5%; }
@@ -774,7 +813,7 @@ html {
   .donations__options-items span {
     color: #FE95B3;
     font-family: "NationalBold", sans-serif;
-    font-size: 3rem;
+    font-size: 4rem;
     padding-right: 1rem; }
 
 .donations__options-items:hover {

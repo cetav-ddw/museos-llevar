@@ -1,11 +1,3 @@
-#about {
-    background-color: $dark-blue;
-}
-
-#to-do {
-    background-color: $light-blue;
-}
-
 .description{
     align-items: center;
     display: flex;
@@ -26,6 +18,9 @@
     @media (min-width: 50rem){
         margin-top: 0;
         width: 50%;
+        img {
+            width: 70%;
+        }
     }
 }
 
