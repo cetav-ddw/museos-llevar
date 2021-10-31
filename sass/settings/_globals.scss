@@ -90,6 +90,14 @@ li{
   clear: both;
 }
 
+.b-blue {
+  background-color:$dark-blue;
+}
+
+.b-blue--l {
+  background-color: $light-blue;
+}
+
 .bold-font {
   font-weight: bold;
 }

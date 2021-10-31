@@ -1,9 +1,55 @@
-.pedagogies {
-    margin-top: 10%;
-    h1 {
-        text-align: center;
-        margin-top: 7.5rem;
+.metodologies {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    @media (min-width: 50rem) {
+        flex-direction: row;
     }
+
+    h1 {
+        color: $white;
+    }
+}
+
+.metodologies__title {
+    img {
+        width: 70%;
+    }
+    @media (min-width: 50rem) {
+        position: relative;
+        img {
+            position: absolute;
+            right: 0;
+            width: 80%;
+        }
+        h1 {
+            margin-top: 38rem;
+        }
+        width: 50%;
+    }
+}
+
+.metodologies__text {
+    margin-bottom: 3rem;
+    p {
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    @media (min-width: 50rem) {
+        margin: 2rem;
+        flex-direction: row;
+    }
+}
+
+.metodologies__text--pink {
+    font-size: $typo-l;
+    color: $pink;
+    margin: 0;
+}
+
+.metodologies__text--white {
+    color: $white;
 }
 
 .pedagogies_cards {
@@ -55,6 +101,7 @@
         }
     }
 }
+
 .pedagogies__cards--white {
     background-color: $white;
 
