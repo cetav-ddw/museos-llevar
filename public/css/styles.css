@@ -29,7 +29,7 @@ h1 {
   font-size: 4rem; }
   @media (min-width: 60rem) {
     h1 {
-      font-size: 7rem; } }
+      font-size: 6.5rem; } }
 
 h2 {
   font-family: "NationalBold", sans-serif;
@@ -91,6 +91,9 @@ li {
 
 .b-blue--l {
   background-color: #3974FE; }
+
+.b-pink {
+  background-color: #FE95B3; }
 
 .bold-font {
   font-weight: bold; }
@@ -531,22 +534,24 @@ html {
 .slider__prev--arrow:hover, .slider__next--arrow:hover {
   cursor: pointer; }
 
-.info-taller {
-  margin-top: 10%;
-  text-align: center; }
+.course {
+  width: 100%; }
+  .course h1, .course p {
+    color: #FFFF; }
 
-.info-taller__items {
+.course__thought {
+  align-items: center;
   display: flex;
-  flex-direction: column;
-  gap: 3rem; }
-  @media (min-width: 60rem) {
-    .info-taller__items {
-      flex-direction: row; }
-      .info-taller__items img {
-        width: 50%; } }
-
-.info-bottom {
-  margin-bottom: 10%; }
+  flex-direction: column-reverse;
+  padding-top: 10%; }
+  .course__thought div {
+    width: 50%; }
+  .course__thought img {
+    width: 40%; }
+  @media (min-width: 50rem) {
+    .course__thought {
+      flex-direction: row;
+      gap: 4rem; } }
 
 .metodologies {
   align-items: center;
@@ -678,7 +683,6 @@ html {
       width: 50%; } }
 
 .link {
-  background-color: #FE95B3;
   color: #FFFF;
   margin-top: 5%; }
 
