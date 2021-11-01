@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 @font-face {
   font-family: 'NationalBold';
@@ -893,3 +894,74 @@ html {
     .form-mailchimp {
       align-items: flex-end;
       flex-direction: row; } }
+
+.box-proyect {
+  display: flex;
+  flex-direction: row; }
+
+.box-title h1 {
+  color: #0100A3;
+  text-align: center; }
+
+@media (min-width: 60rem) {
+  .box-title h1 {
+    display: none;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    margin: 2rem 0; } }
+
+.box-card {
+  display: flex;
+  align-items: center;
+  margin: 2rem; }
+
+.card {
+  background-color: #0100A3;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: end; }
+  .card p {
+    display: none;
+    color: white;
+    margin: 1rem;
+    text-align: justify;
+    line-height: 1.5rem; }
+  @media (min-width: 40rem) {
+    .card {
+      width: 39rem; } }
+
+.cardContainer {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin: 0 1.5rem 1rem 3rem; }
+
+.metas {
+  color: white;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+  display: none; }
+  .metas p {
+    margin: 0; }
+  .metas img {
+    width: 30rem; }
+  @media (min-width: 50rem) {
+    .metas {
+      display: block; } }
+
+.arrow {
+  -webkit-appearance: none;
+  width: 5.5rem; }
+
+.arrow:before {
+  content: "↓";
+  color: white;
+  font-size: 40px; }
+
+.arrow:checked:before {
+  font-size: 40px;
+  content: "↑";
+  color: white; }

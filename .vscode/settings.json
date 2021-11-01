@@ -1,3 +1,4 @@
 {
-    "rainbowTags.allowEverywhere": true
+    "rainbowTags.allowEverywhere": true,
+    "liveServer.settings.port": 5501
 }
