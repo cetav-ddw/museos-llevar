@@ -897,58 +897,69 @@ html {
 
 .box-proyect {
   display: flex;
-  flex-direction: row; }
+  flex-direction: column;
+  justify-content: space-around; }
+  @media (min-width: 60rem) {
+    .box-proyect {
+      flex-direction: row; } }
 
-.box-title h1 {
+.box-title {
   color: #0100A3;
   text-align: center; }
+  @media (min-width: 60rem) {
+    .box-title {
+      width: 10%;
+      transform: rotate(180deg);
+      writing-mode: vertical-lr; } }
 
 @media (min-width: 60rem) {
-  .box-title h1 {
-    display: none;
-    writing-mode: vertical-lr;
-    transform: rotate(180deg);
-    margin: 2rem 0; } }
+  .box-cards-content {
+    width: 80%; } }
 
 .box-card {
-  display: flex;
   align-items: center;
+  display: flex;
+  flex-direction: column;
   margin: 2rem; }
+  @media (min-width: 60rem) {
+    .box-card {
+      flex-direction: row; } }
 
 .card {
   background-color: #0100A3;
-  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: end; }
+  justify-content: end;
+  padding: 1rem;
+  width: 100%; }
   .card p {
-    display: none;
     color: white;
+    display: none;
+    line-height: 1.5rem;
     margin: 1rem;
-    text-align: justify;
-    line-height: 1.5rem; }
-  @media (min-width: 40rem) {
+    text-align: justify; }
+  @media (min-width: 60rem) {
     .card {
-      width: 39rem; } }
+      width: 50rem; } }
 
 .cardContainer {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: end;
   margin: 0 1.5rem 1rem 3rem; }
 
 .metas {
   color: white;
-  font-size: 1.5rem;
   display: flex;
   flex-direction: column;
-  margin-left: 2rem;
-  display: none; }
+  font-size: 1.5rem;
+  margin-left: 2rem; }
   .metas p {
     margin: 0; }
-  .metas img {
-    width: 30rem; }
-  @media (min-width: 50rem) {
+  .metas span {
+    color: #0100A3;
+    font-size: 5rem; }
+  @media (min-width: 60rem) {
     .metas {
       display: block; } }
 
@@ -962,6 +973,6 @@ html {
   font-size: 40px; }
 
 .arrow:checked:before {
-  font-size: 40px;
+  color: white;
   content: "↑";
-  color: white; }
+  font-size: 40px; }
