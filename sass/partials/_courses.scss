@@ -8,16 +8,19 @@
 .course__thought {
     align-items: center;
     display: flex;
-    div {
-        width: 50%;
-    }
     flex-direction: column-reverse;
     img {
-        width: 40%;
+        width: 80%;
     }
     padding-top: 10%;
     
     @media (min-width: 50rem) {
+        img {
+            width: 40%;
+        }
+        div {
+            width: 50%;
+        }
         flex-direction: row;
         gap: 4rem;
     }     
