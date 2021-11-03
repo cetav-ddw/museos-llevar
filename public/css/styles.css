@@ -111,14 +111,19 @@ li {
 .form {
   background-color: #0100A3;
   display: flex;
-  justify-content: space-between;
-  margin-top: 10%; }
+  justify-content: space-between; }
   .form h1, .form label, .form p {
     color: #FFFF;
     text-align: center; }
 
 .form__content {
   padding: 4rem 2rem 6rem 2rem; }
+  .form__content img {
+    padding-left: 35%;
+    width: 40%; }
+    @media (min-width: 60rem) {
+      .form__content img {
+        width: 30%; } }
   @media (min-width: 60rem) {
     .form__content {
       padding-top: 5.5rem; } }
@@ -271,14 +276,19 @@ li {
 .form {
   background-color: #0100A3;
   display: flex;
-  justify-content: space-between;
-  margin-top: 10%; }
+  justify-content: space-between; }
   .form h1, .form label, .form p {
     color: #FFFF;
     text-align: center; }
 
 .form__content {
   padding: 4rem 2rem 6rem 2rem; }
+  .form__content img {
+    padding-left: 35%;
+    width: 40%; }
+    @media (min-width: 60rem) {
+      .form__content img {
+        width: 30%; } }
   @media (min-width: 60rem) {
     .form__content {
       padding-top: 5.5rem; } }
@@ -544,20 +554,23 @@ html {
   display: flex;
   flex-direction: column-reverse;
   padding-top: 10%; }
-  .course__thought div {
-    width: 50%; }
   .course__thought img {
-    width: 40%; }
+    width: 80%; }
   @media (min-width: 50rem) {
     .course__thought {
       flex-direction: row;
-      gap: 4rem; } }
+      gap: 4rem; }
+      .course__thought img {
+        width: 40%; }
+      .course__thought div {
+        width: 50%; } }
 
 .metodologies {
   align-items: center;
   display: flex;
   flex-direction: column;
-  gap: 5rem; }
+  gap: 5rem;
+  margin-top: 10%; }
   @media (min-width: 50rem) {
     .metodologies {
       flex-direction: row; } }
@@ -595,64 +608,6 @@ html {
 
 .metodologies__text--white {
   color: #FFFF; }
-
-.pedagogies_cards {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 2rem;
-  margin-top: 6rem; }
-  @media (min-width: 60rem) {
-    .pedagogies_cards {
-      margin-top: 10rem; } }
-
-.pedagogies_cards_information {
-  align-items: center;
-  border-radius: 0 15px 0 15px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  display: flex;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
-  flex-direction: column;
-  margin: 0 auto;
-  padding: 1rem;
-  position: relative;
-  width: 70%; }
-  .pedagogies_cards_information img {
-    width: 80%;
-    padding-top: 2rem; }
-  .pedagogies_cards_information p {
-    font-size: 4rem;
-    text-align: center;
-    font-weight: bold; }
-  @media (min-width: 40rem) {
-    .pedagogies_cards_information {
-      width: 40%; } }
-  @media (min-width: 60rem) {
-    .pedagogies_cards_information {
-      width: 20%; }
-      .pedagogies_cards_information p {
-        font-size: 4rem; } }
-
-.pedagogies__cards--white {
-  background-color: #FFFF; }
-  .pedagogies__cards--white p {
-    color: #0100A3; }
-
-.pedagogies__cards--orange {
-  background-color: #EC4627; }
-  .pedagogies__cards--orange p {
-    color: #FFFF; }
-
-.pedagogies__cards--pink {
-  background-color: #FE95B3; }
-  .pedagogies__cards--pink p {
-    color: #0100A3; }
-
-.pedagogies__cards--blue {
-  background-color: #0100A3; }
-  .pedagogies__cards--blue p {
-    color: #FFFF; }
 
 .description {
   align-items: center;
@@ -756,69 +711,22 @@ html {
     .to-do__title {
       width: 40%; } }
 
-.donations {
-  margin-top: 10%; }
-
-.donations__wrapper {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  gap: 6rem; }
-  @media (min-width: 40rem) {
-    .donations__wrapper {
-      align-items: flex-start;
-      flex-direction: row;
-      justify-content: space-around; }
-      .donations__wrapper h1 {
-        margin-top: 0; } }
-
 .donations__content {
-  width: 90%; }
-  @media (min-width: 40rem) {
-    .donations__content {
-      width: 50%; } }
-
-.donations__options {
   align-items: center;
-  background-color: #FE95B3;
-  border-radius: 1rem;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
-  padding: 1rem;
-  width: 90%; }
-  @media (min-width: 40rem) {
-    .donations__options {
+  gap: 4rem;
+  padding: 5% 0; }
+  @media (min-width: 50rem) {
+    .donations__content {
+      flex-direction: row;
+      justify-content: space-around; } }
+
+.donations__content--text {
+  color: #0100A3; }
+  @media (min-width: 50rem) {
+    .donations__content--text {
       width: 50%; } }
-  .donations__options h2, .donations__options p {
-    color: #FFFF; }
-
-.donations__button {
-  background-color: #0100A3;
-  box-shadow: 0px 4px 4px rgba(253, 0, 0, 0.25);
-  border-radius: 3rem;
-  display: inline;
-  margin-bottom: 3rem;
-  padding: 1rem; }
-
-.donations__options-items {
-  align-items: center;
-  background-color: #3974FE;
-  border-radius: 1.5rem;
-  box-shadow: 0px 4px 4px rgba(253, 0, 0, 0.25);
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 90%; }
-  .donations__options-items img {
-    width: 30%; }
-  .donations__options-items p {
-    width: 50%; }
-  .donations__options-items span {
-    color: #FE95B3;
-    font-family: "NationalBold", sans-serif;
-    font-size: 4rem;
-    padding-right: 1rem; }
 
 .donations__options-items:hover {
   -webkit-animation: tiembla 0.9s; }
@@ -831,65 +739,55 @@ html {
   100% {
     -webkit-transform: rotateZ(1deg); } }
 
-.button-mailchimp :hover {
-  color: #0100A3;
-  font-weight: bold; }
-
-@media (min-width: 60rem) {
-  .button-mailchimp {
-    display: inline-block;
-    margin-top: 0; } }
-
-.input-mailchimp {
-  width: 100%; }
-  @media (min-width: 40rem) {
-    .input-mailchimp {
-      width: 60%; } }
-
-.newsletter {
-  align-items: center;
-  background-color: #3974FE;
+.donations__content--cards {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  margin-top: 5rem;
-  padding: 2rem; }
-  @media (min-width: 40rem) {
-    .newsletter {
-      align-items: center;
-      border-radius: 1rem;
-      flex-direction: row;
-      justify-content: space-around;
-      margin: 0 auto;
-      width: 75%; } }
+  align-items: center; }
+  .donations__content--cards p {
+    color: #FFFF;
+    font-weight: bold; }
+  .donations__content--cards span img {
+    width: 5rem; }
+  @media (min-width: 50rem) {
+    .donations__content--cards {
+      width: 50%; } }
 
-.newsletter__mailchimp {
+.donations__content--cards-item {
+  align-self: flex-end;
   width: 50%; }
-  .newsletter__mailchimp input {
-    border-radius: .8rem;
-    border: 0;
-    outline: 0;
-    box-shadow: 0px 4px 4px rgba(48, 45, 45, 0.25);
-    filter: drop-shadow(0px 4px 4px rgba(46, 45, 45, 0.3));
-    padding: 1rem;
-    resize: none; }
-  @media (min-width: 40rem) {
-    .newsletter__mailchimp {
-      width: 60%; } }
+  @media (min-width: 30rem) {
+    .donations__content--cards-item {
+      width: 40%; } }
 
-.newsletter__title h3 {
-  color: #FFFF;
-  padding-left: 1rem; }
-
-@media (min-width: 40rem) {
-  .newsletter__title {
-    width: 60%; } }
-
-.form-mailchimp {
+.pedagogies_cards {
   display: flex;
-  flex-direction: column;
-  gap: 1rem; }
-  @media (min-width: 40rem) {
-    .form-mailchimp {
-      align-items: flex-end;
-      flex-direction: row; } }
+  flex-direction: row;
+  height: 14rem;
+  gap: 1rem;
+  padding: 1rem; }
+  @media (min-width: 30rem) {
+    .pedagogies_cards {
+      height: 18rem; } }
+
+.pedagogies_cards_information {
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+  background-color: #0100A3;
+  padding: 2rem .5rem; }
+  .pedagogies_cards_information img {
+    width: 5rem; }
+    @media (min-width: 30rem) {
+      .pedagogies_cards_information img {
+        width: 8rem; } }
+  .pedagogies_cards_information p {
+    color: #FFFF;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0; }
+    @media (min-width: 30rem) {
+      .pedagogies_cards_information p {
+        font-size: 4rem; } }
+  @media (min-width: 30rem) {
+    .pedagogies_cards_information {
+      padding: 2rem 1rem; } }

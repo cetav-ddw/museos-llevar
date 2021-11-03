@@ -10,6 +10,7 @@
     h1 {
         color: $white;
     }
+    margin-top: 10%;
 }
 
 .metodologies__title {
@@ -52,85 +53,3 @@
     color: $white;
 }
 
-.pedagogies_cards {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 2rem;
-    margin-top: 6rem;
-
-    @media (min-width: 60rem) {
-        margin-top: 10rem;
-    }
-}
-
-.pedagogies_cards_information {
-    align-items: center;
-    border-radius: 0 15px 0 15px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    display: flex;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.3));
-    flex-direction: column;
-    margin: 0 auto;
-    padding: 1rem;
-    position: relative;
-    width: 70%;
-
-    img {
-        width: 80%;
-        padding-top: 2rem;
-    }
-
-    p {
-        font-size: $typo-l;
-
-        text-align: center;
-        font-weight: bold;
-    }
-
-    @media (min-width: 40rem) {
-        width: 40%;
-    }
-
-    @media (min-width: 60rem) {
-        width: 20%;
-
-        p {
-            font-size: $typo-l;
-        }
-    }
-}
-
-.pedagogies__cards--white {
-    background-color: $white;
-
-    p{
-        color: $dark-blue;
-    }
-}
-
-.pedagogies__cards--orange {
-    background-color: $orange;
-
-    p{
-        color: $white;
-    }
-}
-
-.pedagogies__cards--pink {
-    background-color: $pink;
-
-    p{
-        color: $dark-blue;
-    }
-    
-}
-
-.pedagogies__cards--blue {
-    background-color: $dark-blue;
-
-    p{
-        color: $white;
-    }
-}
